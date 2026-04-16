@@ -1,0 +1,25 @@
+# Wuzzuf Skill-Gap Analyzer — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core scraping
+selenium>=4.18.0
+undetected-chromedriver>=3.5.5
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+
+# Data pipeline
+pandas>=2.2.0
+rapidfuzz>=3.6.0
+
+# Visualization (pipeline charts + dashboard)
+plotly>=5.20.0
+kaleido>=0.2.1
+
+# Dashboard
+streamlit>=1.32.0
+
+# Utilities
+fake-useragent>=1.5.0
+
+# Testing
+pytest>=8.0.0

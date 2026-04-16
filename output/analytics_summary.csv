@@ -1,0 +1,872 @@
+segment_type,segment_value,rank,skill_canonical,skill_category,job_count,demand_score,demand_rank,senior_mentions,mid_mentions,entry_mentions,seniority_skew,gap_signal_score,is_emerging_gap
+global,all,1,Data Engineering,data_ml_ai,1711.0,0.3986,,,,,,,
+global,all,2,iOS Development,mobile,953.0,0.222,,,,,,,
+global,all,3,Event-Driven Architecture,tools_practices,589.0,0.1372,,,,,,,
+global,all,4,Service Mesh,tools_practices,569.0,0.1325,,,,,,,
+global,all,5,API Design,tools_practices,541.0,0.126,,,,,,,
+global,all,6,Statistical Analysis,data_ml_ai,438.0,0.102,,,,,,,
+global,all,7,Design Patterns,tools_practices,323.0,0.0752,,,,,,,
+global,all,8,Cross-Platform Development,mobile,322.0,0.075,,,,,,,
+global,all,9,Recommendation Systems,data_ml_ai,301.0,0.0701,,,,,,,
+global,all,10,Cassandra,databases,221.0,0.0515,,,,,,,
+global,all,11,Digital Forensics,cybersecurity,195.0,0.0454,,,,,,,
+global,all,12,Domain-Driven Design,tools_practices,118.0,0.0275,,,,,,,
+global,all,13,Adobe XD,tools_practices,114.0,0.0266,,,,,,,
+global,all,14,GDPR Compliance,cybersecurity,80.0,0.0186,,,,,,,
+global,all,15,Java,programming_languages,75.0,0.0175,,,,,,,
+global,all,16,SQL,programming_languages,73.0,0.017,,,,,,,
+global,all,17,Python,programming_languages,69.0,0.0161,,,,,,,
+global,all,18,Application Security,cybersecurity,67.0,0.0156,,,,,,,
+global,all,19,Power BI,data_ml_ai,65.0,0.0151,,,,,,,
+global,all,20,JavaScript,programming_languages,63.0,0.0147,,,,,,,
+role,Backend,1,iOS Development,mobile,32.0,0.8,,,,,,,
+role,Backend,2,Data Engineering,data_ml_ai,20.0,0.5,,,,,,,
+role,Backend,3,API Design,tools_practices,16.0,0.4,,,,,,,
+role,Backend,4,Git,tools_practices,15.0,0.375,,,,,,,
+role,Backend,5,REST API,frameworks_libraries,13.0,0.325,,,,,,,
+role,Backend,6,Java,programming_languages,12.0,0.3,,,,,,,
+role,Backend,7,.NET,frameworks_libraries,12.0,0.3,,,,,,,
+role,Backend,8,Python,programming_languages,10.0,0.25,,,,,,,
+role,Backend,9,ASP.NET,frameworks_libraries,9.0,0.225,,,,,,,
+role,Backend,10,SQL,programming_languages,8.0,0.2,,,,,,,
+role,Cybersecurity,1,Data Engineering,data_ml_ai,7.0,1.0,,,,,,,
+role,Cybersecurity,2,iOS Development,mobile,7.0,1.0,,,,,,,
+role,Cybersecurity,3,Application Security,cybersecurity,6.0,0.8571,,,,,,,
+role,Cybersecurity,4,Network Security,cybersecurity,4.0,0.5714,,,,,,,
+role,Cybersecurity,5,Firewalls,cybersecurity,3.0,0.4286,,,,,,,
+role,Cybersecurity,6,Recommendation Systems,data_ml_ai,3.0,0.4286,,,,,,,
+role,Cybersecurity,7,Cybersecurity,cybersecurity,2.0,0.2857,,,,,,,
+role,Cybersecurity,8,Cassandra,databases,1.0,0.1429,,,,,,,
+role,Cybersecurity,9,Design Patterns,tools_practices,1.0,0.1429,,,,,,,
+role,Cybersecurity,10,DNS,devops_cloud,1.0,0.1429,,,,,,,
+role,Data Engineering,1,Data Engineering,data_ml_ai,11.0,1.0,,,,,,,
+role,Data Engineering,2,Python,programming_languages,8.0,0.7273,,,,,,,
+role,Data Engineering,3,SQL,programming_languages,6.0,0.5455,,,,,,,
+role,Data Engineering,4,AWS,devops_cloud,5.0,0.4545,,,,,,,
+role,Data Engineering,5,Airflow,frameworks_libraries,5.0,0.4545,,,,,,,
+role,Data Engineering,6,iOS Development,mobile,4.0,0.3636,,,,,,,
+role,Data Engineering,7,Docker,devops_cloud,4.0,0.3636,,,,,,,
+role,Data Engineering,8,Apache Spark,frameworks_libraries,4.0,0.3636,,,,,,,
+role,Data Engineering,9,Apache,devops_cloud,4.0,0.3636,,,,,,,
+role,Data Engineering,10,Git,tools_practices,3.0,0.2727,,,,,,,
+role,Data Science / ML,1,Data Engineering,data_ml_ai,23.0,0.7419,,,,,,,
+role,Data Science / ML,2,iOS Development,mobile,20.0,0.6452,,,,,,,
+role,Data Science / ML,3,Python,programming_languages,18.0,0.5806,,,,,,,
+role,Data Science / ML,4,Statistical Analysis,data_ml_ai,14.0,0.4516,,,,,,,
+role,Data Science / ML,5,Machine Learning,data_ml_ai,9.0,0.2903,,,,,,,
+role,Data Science / ML,6,Deep Learning,data_ml_ai,9.0,0.2903,,,,,,,
+role,Data Science / ML,7,Power BI,data_ml_ai,9.0,0.2903,,,,,,,
+role,Data Science / ML,8,SQL,programming_languages,7.0,0.2258,,,,,,,
+role,Data Science / ML,9,Generative AI,data_ml_ai,5.0,0.1613,,,,,,,
+role,Data Science / ML,10,Large Language Models,data_ml_ai,5.0,0.1613,,,,,,,
+role,DevOps / Cloud,1,Data Engineering,data_ml_ai,30.0,0.9677,,,,,,,
+role,DevOps / Cloud,2,iOS Development,mobile,14.0,0.4516,,,,,,,
+role,DevOps / Cloud,3,Azure DevOps,devops_cloud,9.0,0.2903,,,,,,,
+role,DevOps / Cloud,4,Event-Driven Architecture,tools_practices,9.0,0.2903,,,,,,,
+role,DevOps / Cloud,5,CI/CD,devops_cloud,8.0,0.2581,,,,,,,
+role,DevOps / Cloud,6,Kubernetes,devops_cloud,8.0,0.2581,,,,,,,
+role,DevOps / Cloud,7,AWS,devops_cloud,8.0,0.2581,,,,,,,
+role,DevOps / Cloud,8,Docker,devops_cloud,7.0,0.2258,,,,,,,
+role,DevOps / Cloud,9,Network Security,cybersecurity,7.0,0.2258,,,,,,,
+role,DevOps / Cloud,10,Git,tools_practices,7.0,0.2258,,,,,,,
+role,Frontend,1,JavaScript,programming_languages,22.0,0.7586,,,,,,,
+role,Frontend,2,Java,programming_languages,20.0,0.6897,,,,,,,
+role,Frontend,3,iOS Development,mobile,17.0,0.5862,,,,,,,
+role,Frontend,4,React,frameworks_libraries,16.0,0.5517,,,,,,,
+role,Frontend,5,TypeScript,programming_languages,14.0,0.4828,,,,,,,
+role,Frontend,6,API Design,tools_practices,12.0,0.4138,,,,,,,
+role,Frontend,7,Git,tools_practices,11.0,0.3793,,,,,,,
+role,Frontend,8,Data Engineering,data_ml_ai,10.0,0.3448,,,,,,,
+role,Frontend,9,REST API,frameworks_libraries,9.0,0.3103,,,,,,,
+role,Frontend,10,Angular,frameworks_libraries,8.0,0.2759,,,,,,,
+role,Full Stack,1,iOS Development,mobile,26.0,0.8966,,,,,,,
+role,Full Stack,2,ELK Stack,devops_cloud,23.0,0.7931,,,,,,,
+role,Full Stack,3,Data Engineering,data_ml_ai,22.0,0.7586,,,,,,,
+role,Full Stack,4,JavaScript,programming_languages,14.0,0.4828,,,,,,,
+role,Full Stack,5,Java,programming_languages,14.0,0.4828,,,,,,,
+role,Full Stack,6,Node.js,frameworks_libraries,10.0,0.3448,,,,,,,
+role,Full Stack,7,API Design,tools_practices,10.0,0.3448,,,,,,,
+role,Full Stack,8,React,frameworks_libraries,10.0,0.3448,,,,,,,
+role,Full Stack,9,Cross-Platform Development,mobile,9.0,0.3103,,,,,,,
+role,Full Stack,10,.NET,frameworks_libraries,8.0,0.2759,,,,,,,
+role,Mobile,1,iOS Development,mobile,12.0,0.75,,,,,,,
+role,Mobile,2,REST API,frameworks_libraries,9.0,0.5625,,,,,,,
+role,Mobile,3,Data Engineering,data_ml_ai,8.0,0.5,,,,,,,
+role,Mobile,4,Git,tools_practices,8.0,0.5,,,,,,,
+role,Mobile,5,Android Development,mobile,7.0,0.4375,,,,,,,
+role,Mobile,6,Java,programming_languages,7.0,0.4375,,,,,,,
+role,Mobile,7,Mobile UI Design,mobile,7.0,0.4375,,,,,,,
+role,Mobile,8,API Design,tools_practices,6.0,0.375,,,,,,,
+role,Mobile,9,React,frameworks_libraries,5.0,0.3125,,,,,,,
+role,Mobile,10,Design Patterns,tools_practices,5.0,0.3125,,,,,,,
+role,Other Tech,1,Data Engineering,data_ml_ai,1551.0,0.4765,,,,,,,
+role,Other Tech,2,iOS Development,mobile,806.0,0.2476,,,,,,,
+role,Other Tech,3,Event-Driven Architecture,tools_practices,570.0,0.1751,,,,,,,
+role,Other Tech,4,Service Mesh,tools_practices,563.0,0.173,,,,,,,
+role,Other Tech,5,API Design,tools_practices,482.0,0.1481,,,,,,,
+role,Other Tech,6,Statistical Analysis,data_ml_ai,417.0,0.1281,,,,,,,
+role,Other Tech,7,Design Patterns,tools_practices,301.0,0.0925,,,,,,,
+role,Other Tech,8,Cross-Platform Development,mobile,293.0,0.09,,,,,,,
+role,Other Tech,9,Recommendation Systems,data_ml_ai,286.0,0.0879,,,,,,,
+role,Other Tech,10,Cassandra,databases,216.0,0.0664,,,,,,,
+role,QA / Testing,1,Data Engineering,data_ml_ai,26.0,0.5417,,,,,,,
+role,QA / Testing,2,A/B Testing,data_ml_ai,13.0,0.2708,,,,,,,
+role,QA / Testing,3,iOS Development,mobile,11.0,0.2292,,,,,,,
+role,QA / Testing,4,ISO 27001,cybersecurity,8.0,0.1667,,,,,,,
+role,QA / Testing,5,Statistical Analysis,data_ml_ai,7.0,0.1458,,,,,,,
+role,QA / Testing,6,Agile,tools_practices,7.0,0.1458,,,,,,,
+role,QA / Testing,7,API Design,tools_practices,6.0,0.125,,,,,,,
+role,QA / Testing,8,Penetration Testing,cybersecurity,6.0,0.125,,,,,,,
+role,QA / Testing,9,Jira,tools_practices,5.0,0.1042,,,,,,,
+role,QA / Testing,10,Selenium,tools_practices,5.0,0.1042,,,,,,,
+role,UI/UX,1,API Design,tools_practices,4.0,0.8,,,,,,,
+role,UI/UX,2,Design Patterns,tools_practices,4.0,0.8,,,,,,,
+role,UI/UX,3,iOS Development,mobile,4.0,0.8,,,,,,,
+role,UI/UX,4,Mobile UI Design,mobile,4.0,0.8,,,,,,,
+role,UI/UX,5,Data Engineering,data_ml_ai,3.0,0.6,,,,,,,
+role,UI/UX,6,Domain-Driven Design,tools_practices,1.0,0.2,,,,,,,
+role,UI/UX,7,Cross-Platform Development,mobile,1.0,0.2,,,,,,,
+role,UI/UX,8,Application Security,cybersecurity,1.0,0.2,,,,,,,
+role,UI/UX,9,Java,programming_languages,1.0,0.2,,,,,,,
+role,UI/UX,10,Figma,tools_practices,1.0,0.2,,,,,,,
+seniority,Entry,1,Data Engineering,data_ml_ai,331.0,0.3323,,,,,,,
+seniority,Entry,2,Service Mesh,tools_practices,248.0,0.249,,,,,,,
+seniority,Entry,3,iOS Development,mobile,218.0,0.2189,,,,,,,
+seniority,Entry,4,API Design,tools_practices,113.0,0.1135,,,,,,,
+seniority,Entry,5,Design Patterns,tools_practices,81.0,0.0813,,,,,,,
+seniority,Entry,6,Event-Driven Architecture,tools_practices,79.0,0.0793,,,,,,,
+seniority,Entry,7,Cross-Platform Development,mobile,77.0,0.0773,,,,,,,
+seniority,Entry,8,Statistical Analysis,data_ml_ai,61.0,0.0612,,,,,,,
+seniority,Entry,9,Recommendation Systems,data_ml_ai,46.0,0.0462,,,,,,,
+seniority,Entry,10,Cassandra,databases,39.0,0.0392,,,,,,,
+seniority,Mid,1,Data Engineering,data_ml_ai,1124.0,0.4727,,,,,,,
+seniority,Mid,2,iOS Development,mobile,535.0,0.225,,,,,,,
+seniority,Mid,3,Event-Driven Architecture,tools_practices,421.0,0.177,,,,,,,
+seniority,Mid,4,API Design,tools_practices,368.0,0.1548,,,,,,,
+seniority,Mid,5,Statistical Analysis,data_ml_ai,252.0,0.106,,,,,,,
+seniority,Mid,6,Design Patterns,tools_practices,220.0,0.0925,,,,,,,
+seniority,Mid,7,Service Mesh,tools_practices,211.0,0.0887,,,,,,,
+seniority,Mid,8,Recommendation Systems,data_ml_ai,193.0,0.0812,,,,,,,
+seniority,Mid,9,Cross-Platform Development,mobile,167.0,0.0702,,,,,,,
+seniority,Mid,10,Cassandra,databases,125.0,0.0526,,,,,,,
+seniority,Senior,1,Data Engineering,data_ml_ai,251.0,0.2749,,,,,,,
+seniority,Senior,2,iOS Development,mobile,200.0,0.2191,,,,,,,
+seniority,Senior,3,Statistical Analysis,data_ml_ai,125.0,0.1369,,,,,,,
+seniority,Senior,4,Service Mesh,tools_practices,110.0,0.1205,,,,,,,
+seniority,Senior,5,Event-Driven Architecture,tools_practices,89.0,0.0975,,,,,,,
+seniority,Senior,6,Cross-Platform Development,mobile,78.0,0.0854,,,,,,,
+seniority,Senior,7,Recommendation Systems,data_ml_ai,62.0,0.0679,,,,,,,
+seniority,Senior,8,API Design,tools_practices,60.0,0.0657,,,,,,,
+seniority,Senior,9,Cassandra,databases,57.0,0.0624,,,,,,,
+seniority,Senior,10,Digital Forensics,cybersecurity,54.0,0.0591,,,,,,,
+city,Alexandria,1,Data Engineering,data_ml_ai,5.0,0.2941,,,,,,,
+city,Alexandria,2,API Design,tools_practices,3.0,0.1765,,,,,,,
+city,Alexandria,3,Git,tools_practices,3.0,0.1765,,,,,,,
+city,Alexandria,4,Service Mesh,tools_practices,3.0,0.1765,,,,,,,
+city,Alexandria,5,REST API,frameworks_libraries,3.0,0.1765,,,,,,,
+city,Alexandria,6,Java,programming_languages,2.0,0.1176,,,,,,,
+city,Alexandria,7,Recommendation Systems,data_ml_ai,2.0,0.1176,,,,,,,
+city,Alexandria,8,JavaScript,programming_languages,2.0,0.1176,,,,,,,
+city,Alexandria,9,Django,frameworks_libraries,1.0,0.0588,,,,,,,
+city,Alexandria,10,Docker,devops_cloud,1.0,0.0588,,,,,,,
+city,Cairo,1,Data Engineering,data_ml_ai,58.0,0.3742,,,,,,,
+city,Cairo,2,API Design,tools_practices,34.0,0.2194,,,,,,,
+city,Cairo,3,Git,tools_practices,31.0,0.2,,,,,,,
+city,Cairo,4,Docker,devops_cloud,26.0,0.1677,,,,,,,
+city,Cairo,5,REST API,frameworks_libraries,25.0,0.1613,,,,,,,
+city,Cairo,6,Python,programming_languages,24.0,0.1548,,,,,,,
+city,Cairo,7,iOS Development,mobile,24.0,0.1548,,,,,,,
+city,Cairo,8,Service Mesh,tools_practices,21.0,0.1355,,,,,,,
+city,Cairo,9,Event-Driven Architecture,tools_practices,16.0,0.1032,,,,,,,
+city,Cairo,10,Java,programming_languages,16.0,0.1032,,,,,,,
+city,Damietta,1,Data Engineering,data_ml_ai,2.0,1.0,,,,,,,
+city,Damietta,2,Event-Driven Architecture,tools_practices,2.0,1.0,,,,,,,
+city,Egypt 1 day ago,1,Data Engineering,data_ml_ai,21.0,0.4038,,,,,,,
+city,Egypt 1 day ago,2,Event-Driven Architecture,tools_practices,9.0,0.1731,,,,,,,
+city,Egypt 1 day ago,3,iOS Development,mobile,7.0,0.1346,,,,,,,
+city,Egypt 1 day ago,4,Service Mesh,tools_practices,7.0,0.1346,,,,,,,
+city,Egypt 1 day ago,5,API Design,tools_practices,6.0,0.1154,,,,,,,
+city,Egypt 1 day ago,6,Design Patterns,tools_practices,4.0,0.0769,,,,,,,
+city,Egypt 1 day ago,7,Statistical Analysis,data_ml_ai,3.0,0.0577,,,,,,,
+city,Egypt 1 day ago,8,Digital Forensics,cybersecurity,3.0,0.0577,,,,,,,
+city,Egypt 1 day ago,9,Cassandra,databases,3.0,0.0577,,,,,,,
+city,Egypt 1 day ago,10,Azure,devops_cloud,2.0,0.0385,,,,,,,
+city,Egypt 1 month ago,1,Data Engineering,data_ml_ai,406.0,0.4016,,,,,,,
+city,Egypt 1 month ago,2,iOS Development,mobile,236.0,0.2334,,,,,,,
+city,Egypt 1 month ago,3,Event-Driven Architecture,tools_practices,159.0,0.1573,,,,,,,
+city,Egypt 1 month ago,4,Service Mesh,tools_practices,131.0,0.1296,,,,,,,
+city,Egypt 1 month ago,5,Statistical Analysis,data_ml_ai,127.0,0.1256,,,,,,,
+city,Egypt 1 month ago,6,API Design,tools_practices,123.0,0.1217,,,,,,,
+city,Egypt 1 month ago,7,Design Patterns,tools_practices,80.0,0.0791,,,,,,,
+city,Egypt 1 month ago,8,Cross-Platform Development,mobile,73.0,0.0722,,,,,,,
+city,Egypt 1 month ago,9,Recommendation Systems,data_ml_ai,72.0,0.0712,,,,,,,
+city,Egypt 1 month ago,10,Cassandra,databases,58.0,0.0574,,,,,,,
+city,Egypt 10 days ago,1,Data Engineering,data_ml_ai,61.0,0.4729,,,,,,,
+city,Egypt 10 days ago,2,iOS Development,mobile,27.0,0.2093,,,,,,,
+city,Egypt 10 days ago,3,API Design,tools_practices,17.0,0.1318,,,,,,,
+city,Egypt 10 days ago,4,Event-Driven Architecture,tools_practices,17.0,0.1318,,,,,,,
+city,Egypt 10 days ago,5,Design Patterns,tools_practices,13.0,0.1008,,,,,,,
+city,Egypt 10 days ago,6,Statistical Analysis,data_ml_ai,13.0,0.1008,,,,,,,
+city,Egypt 10 days ago,7,Service Mesh,tools_practices,10.0,0.0775,,,,,,,
+city,Egypt 10 days ago,8,Cross-Platform Development,mobile,8.0,0.062,,,,,,,
+city,Egypt 10 days ago,9,Digital Forensics,cybersecurity,7.0,0.0543,,,,,,,
+city,Egypt 10 days ago,10,Domain-Driven Design,tools_practices,7.0,0.0543,,,,,,,
+city,Egypt 10 hours ago,1,Data Engineering,data_ml_ai,9.0,0.4286,,,,,,,
+city,Egypt 10 hours ago,2,Event-Driven Architecture,tools_practices,5.0,0.2381,,,,,,,
+city,Egypt 10 hours ago,3,iOS Development,mobile,5.0,0.2381,,,,,,,
+city,Egypt 10 hours ago,4,Service Mesh,tools_practices,4.0,0.1905,,,,,,,
+city,Egypt 10 hours ago,5,Statistical Analysis,data_ml_ai,2.0,0.0952,,,,,,,
+city,Egypt 10 hours ago,6,Digital Forensics,cybersecurity,2.0,0.0952,,,,,,,
+city,Egypt 10 hours ago,7,Cybersecurity,cybersecurity,1.0,0.0476,,,,,,,
+city,Egypt 10 hours ago,8,Domain-Driven Design,tools_practices,1.0,0.0476,,,,,,,
+city,Egypt 10 hours ago,9,API Design,tools_practices,1.0,0.0476,,,,,,,
+city,Egypt 10 hours ago,10,Application Security,cybersecurity,1.0,0.0476,,,,,,,
+city,Egypt 11 days ago,1,Data Engineering,data_ml_ai,43.0,0.5119,,,,,,,
+city,Egypt 11 days ago,2,iOS Development,mobile,24.0,0.2857,,,,,,,
+city,Egypt 11 days ago,3,Service Mesh,tools_practices,13.0,0.1548,,,,,,,
+city,Egypt 11 days ago,4,API Design,tools_practices,11.0,0.131,,,,,,,
+city,Egypt 11 days ago,5,Design Patterns,tools_practices,9.0,0.1071,,,,,,,
+city,Egypt 11 days ago,6,Event-Driven Architecture,tools_practices,9.0,0.1071,,,,,,,
+city,Egypt 11 days ago,7,Recommendation Systems,data_ml_ai,8.0,0.0952,,,,,,,
+city,Egypt 11 days ago,8,Statistical Analysis,data_ml_ai,7.0,0.0833,,,,,,,
+city,Egypt 11 days ago,9,Cross-Platform Development,mobile,7.0,0.0833,,,,,,,
+city,Egypt 11 days ago,10,Adobe XD,tools_practices,5.0,0.0595,,,,,,,
+city,Egypt 11 hours ago,1,Data Engineering,data_ml_ai,13.0,0.5417,,,,,,,
+city,Egypt 11 hours ago,2,iOS Development,mobile,8.0,0.3333,,,,,,,
+city,Egypt 11 hours ago,3,Event-Driven Architecture,tools_practices,4.0,0.1667,,,,,,,
+city,Egypt 11 hours ago,4,Service Mesh,tools_practices,3.0,0.125,,,,,,,
+city,Egypt 11 hours ago,5,Cross-Platform Development,mobile,3.0,0.125,,,,,,,
+city,Egypt 11 hours ago,6,API Design,tools_practices,2.0,0.0833,,,,,,,
+city,Egypt 11 hours ago,7,Statistical Analysis,data_ml_ai,2.0,0.0833,,,,,,,
+city,Egypt 11 hours ago,8,Digital Forensics,cybersecurity,2.0,0.0833,,,,,,,
+city,Egypt 11 hours ago,9,Power BI,data_ml_ai,2.0,0.0833,,,,,,,
+city,Egypt 11 hours ago,10,Computer Vision,data_ml_ai,1.0,0.0417,,,,,,,
+city,Egypt 12 days ago,1,Data Engineering,data_ml_ai,8.0,0.4211,,,,,,,
+city,Egypt 12 days ago,2,iOS Development,mobile,7.0,0.3684,,,,,,,
+city,Egypt 12 days ago,3,API Design,tools_practices,5.0,0.2632,,,,,,,
+city,Egypt 12 days ago,4,Recommendation Systems,data_ml_ai,3.0,0.1579,,,,,,,
+city,Egypt 12 days ago,5,Service Mesh,tools_practices,3.0,0.1579,,,,,,,
+city,Egypt 12 days ago,6,Design Patterns,tools_practices,2.0,0.1053,,,,,,,
+city,Egypt 12 days ago,7,Cross-Platform Development,mobile,2.0,0.1053,,,,,,,
+city,Egypt 12 days ago,8,Bootstrap,frameworks_libraries,1.0,0.0526,,,,,,,
+city,Egypt 12 days ago,9,Adobe XD,tools_practices,1.0,0.0526,,,,,,,
+city,Egypt 12 days ago,10,Domain-Driven Design,tools_practices,1.0,0.0526,,,,,,,
+city,Egypt 12 hours ago,1,Data Engineering,data_ml_ai,14.0,0.5185,,,,,,,
+city,Egypt 12 hours ago,2,Event-Driven Architecture,tools_practices,7.0,0.2593,,,,,,,
+city,Egypt 12 hours ago,3,iOS Development,mobile,7.0,0.2593,,,,,,,
+city,Egypt 12 hours ago,4,API Design,tools_practices,5.0,0.1852,,,,,,,
+city,Egypt 12 hours ago,5,Design Patterns,tools_practices,3.0,0.1111,,,,,,,
+city,Egypt 12 hours ago,6,Domain-Driven Design,tools_practices,2.0,0.0741,,,,,,,
+city,Egypt 12 hours ago,7,Cross-Platform Development,mobile,2.0,0.0741,,,,,,,
+city,Egypt 12 hours ago,8,Computer Vision,data_ml_ai,2.0,0.0741,,,,,,,
+city,Egypt 12 hours ago,9,Service Mesh,tools_practices,2.0,0.0741,,,,,,,
+city,Egypt 12 hours ago,10,Adobe XD,tools_practices,1.0,0.037,,,,,,,
+city,Egypt 13 days ago,1,Data Engineering,data_ml_ai,24.0,0.4444,,,,,,,
+city,Egypt 13 days ago,2,iOS Development,mobile,16.0,0.2963,,,,,,,
+city,Egypt 13 days ago,3,Service Mesh,tools_practices,13.0,0.2407,,,,,,,
+city,Egypt 13 days ago,4,Cross-Platform Development,mobile,8.0,0.1481,,,,,,,
+city,Egypt 13 days ago,5,API Design,tools_practices,7.0,0.1296,,,,,,,
+city,Egypt 13 days ago,6,Statistical Analysis,data_ml_ai,7.0,0.1296,,,,,,,
+city,Egypt 13 days ago,7,Event-Driven Architecture,tools_practices,6.0,0.1111,,,,,,,
+city,Egypt 13 days ago,8,Python,programming_languages,4.0,0.0741,,,,,,,
+city,Egypt 13 days ago,9,Recommendation Systems,data_ml_ai,3.0,0.0556,,,,,,,
+city,Egypt 13 days ago,10,Design Patterns,tools_practices,3.0,0.0556,,,,,,,
+city,Egypt 13 hours ago,1,Data Engineering,data_ml_ai,10.0,0.5263,,,,,,,
+city,Egypt 13 hours ago,2,Event-Driven Architecture,tools_practices,5.0,0.2632,,,,,,,
+city,Egypt 13 hours ago,3,Service Mesh,tools_practices,3.0,0.1579,,,,,,,
+city,Egypt 13 hours ago,4,API Design,tools_practices,3.0,0.1579,,,,,,,
+city,Egypt 13 hours ago,5,Digital Forensics,cybersecurity,2.0,0.1053,,,,,,,
+city,Egypt 13 hours ago,6,Cassandra,databases,2.0,0.1053,,,,,,,
+city,Egypt 13 hours ago,7,Domain-Driven Design,tools_practices,2.0,0.1053,,,,,,,
+city,Egypt 13 hours ago,8,Design Patterns,tools_practices,2.0,0.1053,,,,,,,
+city,Egypt 13 hours ago,9,Airflow,frameworks_libraries,1.0,0.0526,,,,,,,
+city,Egypt 13 hours ago,10,Recommendation Systems,data_ml_ai,1.0,0.0526,,,,,,,
+city,Egypt 14 days ago,1,Data Engineering,data_ml_ai,57.0,0.5089,,,,,,,
+city,Egypt 14 days ago,2,iOS Development,mobile,25.0,0.2232,,,,,,,
+city,Egypt 14 days ago,3,API Design,tools_practices,22.0,0.1964,,,,,,,
+city,Egypt 14 days ago,4,Event-Driven Architecture,tools_practices,16.0,0.1429,,,,,,,
+city,Egypt 14 days ago,5,Design Patterns,tools_practices,14.0,0.125,,,,,,,
+city,Egypt 14 days ago,6,Service Mesh,tools_practices,14.0,0.125,,,,,,,
+city,Egypt 14 days ago,7,Cross-Platform Development,mobile,11.0,0.0982,,,,,,,
+city,Egypt 14 days ago,8,Digital Forensics,cybersecurity,6.0,0.0536,,,,,,,
+city,Egypt 14 days ago,9,Adobe XD,tools_practices,6.0,0.0536,,,,,,,
+city,Egypt 14 days ago,10,Statistical Analysis,data_ml_ai,6.0,0.0536,,,,,,,
+city,Egypt 14 hours ago,1,Data Engineering,data_ml_ai,7.0,0.4667,,,,,,,
+city,Egypt 14 hours ago,2,Service Mesh,tools_practices,4.0,0.2667,,,,,,,
+city,Egypt 14 hours ago,3,API Design,tools_practices,2.0,0.1333,,,,,,,
+city,Egypt 14 hours ago,4,Digital Forensics,cybersecurity,2.0,0.1333,,,,,,,
+city,Egypt 14 hours ago,5,Cassandra,databases,2.0,0.1333,,,,,,,
+city,Egypt 14 hours ago,6,Domain-Driven Design,tools_practices,2.0,0.1333,,,,,,,
+city,Egypt 14 hours ago,7,Event-Driven Architecture,tools_practices,2.0,0.1333,,,,,,,
+city,Egypt 14 hours ago,8,Design Patterns,tools_practices,1.0,0.0667,,,,,,,
+city,Egypt 14 hours ago,9,Airflow,frameworks_libraries,1.0,0.0667,,,,,,,
+city,Egypt 15 days ago,1,Data Engineering,data_ml_ai,40.0,0.4444,,,,,,,
+city,Egypt 15 days ago,2,iOS Development,mobile,18.0,0.2,,,,,,,
+city,Egypt 15 days ago,3,API Design,tools_practices,14.0,0.1556,,,,,,,
+city,Egypt 15 days ago,4,Event-Driven Architecture,tools_practices,11.0,0.1222,,,,,,,
+city,Egypt 15 days ago,5,Design Patterns,tools_practices,9.0,0.1,,,,,,,
+city,Egypt 15 days ago,6,Statistical Analysis,data_ml_ai,8.0,0.0889,,,,,,,
+city,Egypt 15 days ago,7,Service Mesh,tools_practices,7.0,0.0778,,,,,,,
+city,Egypt 15 days ago,8,Cross-Platform Development,mobile,7.0,0.0778,,,,,,,
+city,Egypt 15 days ago,9,Digital Forensics,cybersecurity,6.0,0.0667,,,,,,,
+city,Egypt 15 days ago,10,Recommendation Systems,data_ml_ai,4.0,0.0444,,,,,,,
+city,Egypt 15 hours ago,1,Data Engineering,data_ml_ai,10.0,0.5556,,,,,,,
+city,Egypt 15 hours ago,2,iOS Development,mobile,4.0,0.2222,,,,,,,
+city,Egypt 15 hours ago,3,Service Mesh,tools_practices,3.0,0.1667,,,,,,,
+city,Egypt 15 hours ago,4,Event-Driven Architecture,tools_practices,3.0,0.1667,,,,,,,
+city,Egypt 15 hours ago,5,API Design,tools_practices,2.0,0.1111,,,,,,,
+city,Egypt 15 hours ago,6,Scala,programming_languages,2.0,0.1111,,,,,,,
+city,Egypt 15 hours ago,7,Recommendation Systems,data_ml_ai,2.0,0.1111,,,,,,,
+city,Egypt 15 hours ago,8,Azure,devops_cloud,2.0,0.1111,,,,,,,
+city,Egypt 15 hours ago,9,AWS,devops_cloud,2.0,0.1111,,,,,,,
+city,Egypt 15 hours ago,10,Python,programming_languages,2.0,0.1111,,,,,,,
+city,Egypt 16 days ago,1,Data Engineering,data_ml_ai,47.0,0.4123,,,,,,,
+city,Egypt 16 days ago,2,iOS Development,mobile,28.0,0.2456,,,,,,,
+city,Egypt 16 days ago,3,Event-Driven Architecture,tools_practices,22.0,0.193,,,,,,,
+city,Egypt 16 days ago,4,API Design,tools_practices,16.0,0.1404,,,,,,,
+city,Egypt 16 days ago,5,Service Mesh,tools_practices,15.0,0.1316,,,,,,,
+city,Egypt 16 days ago,6,Statistical Analysis,data_ml_ai,13.0,0.114,,,,,,,
+city,Egypt 16 days ago,7,Recommendation Systems,data_ml_ai,11.0,0.0965,,,,,,,
+city,Egypt 16 days ago,8,Cross-Platform Development,mobile,10.0,0.0877,,,,,,,
+city,Egypt 16 days ago,9,Domain-Driven Design,tools_practices,8.0,0.0702,,,,,,,
+city,Egypt 16 days ago,10,Digital Forensics,cybersecurity,6.0,0.0526,,,,,,,
+city,Egypt 16 hours ago,1,Data Engineering,data_ml_ai,10.0,0.5,,,,,,,
+city,Egypt 16 hours ago,2,iOS Development,mobile,6.0,0.3,,,,,,,
+city,Egypt 16 hours ago,3,Event-Driven Architecture,tools_practices,5.0,0.25,,,,,,,
+city,Egypt 16 hours ago,4,Service Mesh,tools_practices,3.0,0.15,,,,,,,
+city,Egypt 16 hours ago,5,Scala,programming_languages,2.0,0.1,,,,,,,
+city,Egypt 16 hours ago,6,API Design,tools_practices,2.0,0.1,,,,,,,
+city,Egypt 16 hours ago,7,AWS,devops_cloud,2.0,0.1,,,,,,,
+city,Egypt 16 hours ago,8,GCP,devops_cloud,2.0,0.1,,,,,,,
+city,Egypt 16 hours ago,9,SQL,programming_languages,2.0,0.1,,,,,,,
+city,Egypt 16 hours ago,10,Databricks,data_ml_ai,2.0,0.1,,,,,,,
+city,Egypt 17 days ago,1,Data Engineering,data_ml_ai,49.0,0.3603,,,,,,,
+city,Egypt 17 days ago,2,iOS Development,mobile,33.0,0.2426,,,,,,,
+city,Egypt 17 days ago,3,API Design,tools_practices,29.0,0.2132,,,,,,,
+city,Egypt 17 days ago,4,Service Mesh,tools_practices,26.0,0.1912,,,,,,,
+city,Egypt 17 days ago,5,Design Patterns,tools_practices,20.0,0.1471,,,,,,,
+city,Egypt 17 days ago,6,Event-Driven Architecture,tools_practices,18.0,0.1324,,,,,,,
+city,Egypt 17 days ago,7,Statistical Analysis,data_ml_ai,16.0,0.1176,,,,,,,
+city,Egypt 17 days ago,8,Domain-Driven Design,tools_practices,13.0,0.0956,,,,,,,
+city,Egypt 17 days ago,9,Recommendation Systems,data_ml_ai,13.0,0.0956,,,,,,,
+city,Egypt 17 days ago,10,Cross-Platform Development,mobile,10.0,0.0735,,,,,,,
+city,Egypt 17 hours ago,1,Data Engineering,data_ml_ai,2.0,0.2222,,,,,,,
+city,Egypt 17 hours ago,2,API Design,tools_practices,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,3,Burp Suite,cybersecurity,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,4,Cassandra,databases,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,5,Domain-Driven Design,tools_practices,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,6,Event-Driven Architecture,tools_practices,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,7,Service Mesh,tools_practices,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,8,System Design,tools_practices,1.0,0.1111,,,,,,,
+city,Egypt 17 hours ago,9,iOS Development,mobile,1.0,0.1111,,,,,,,
+city,Egypt 18 days ago,1,Data Engineering,data_ml_ai,41.0,0.4505,,,,,,,
+city,Egypt 18 days ago,2,iOS Development,mobile,25.0,0.2747,,,,,,,
+city,Egypt 18 days ago,3,API Design,tools_practices,23.0,0.2527,,,,,,,
+city,Egypt 18 days ago,4,Design Patterns,tools_practices,16.0,0.1758,,,,,,,
+city,Egypt 18 days ago,5,Service Mesh,tools_practices,14.0,0.1538,,,,,,,
+city,Egypt 18 days ago,6,Event-Driven Architecture,tools_practices,12.0,0.1319,,,,,,,
+city,Egypt 18 days ago,7,Cross-Platform Development,mobile,7.0,0.0769,,,,,,,
+city,Egypt 18 days ago,8,Recommendation Systems,data_ml_ai,7.0,0.0769,,,,,,,
+city,Egypt 18 days ago,9,Adobe XD,tools_practices,7.0,0.0769,,,,,,,
+city,Egypt 18 days ago,10,Domain-Driven Design,tools_practices,6.0,0.0659,,,,,,,
+city,Egypt 18 hours ago,1,Data Engineering,data_ml_ai,2.0,0.6667,,,,,,,
+city,Egypt 18 hours ago,2,Cassandra,databases,1.0,0.3333,,,,,,,
+city,Egypt 18 hours ago,3,GDPR Compliance,cybersecurity,1.0,0.3333,,,,,,,
+city,Egypt 19 days ago,1,Data Engineering,data_ml_ai,9.0,0.5,,,,,,,
+city,Egypt 19 days ago,2,iOS Development,mobile,9.0,0.5,,,,,,,
+city,Egypt 19 days ago,3,Digital Forensics,cybersecurity,3.0,0.1667,,,,,,,
+city,Egypt 19 days ago,4,Cross-Platform Development,mobile,2.0,0.1111,,,,,,,
+city,Egypt 19 days ago,5,Event-Driven Architecture,tools_practices,2.0,0.1111,,,,,,,
+city,Egypt 19 days ago,6,Cloud Security,cybersecurity,2.0,0.1111,,,,,,,
+city,Egypt 19 days ago,7,Kubernetes,devops_cloud,2.0,0.1111,,,,,,,
+city,Egypt 19 days ago,8,Statistical Analysis,data_ml_ai,2.0,0.1111,,,,,,,
+city,Egypt 19 days ago,9,Network Security,cybersecurity,2.0,0.1111,,,,,,,
+city,Egypt 19 days ago,10,AWS,devops_cloud,1.0,0.0556,,,,,,,
+city,Egypt 19 hours ago,1,Data Engineering,data_ml_ai,3.0,0.375,,,,,,,
+city,Egypt 19 hours ago,2,Event-Driven Architecture,tools_practices,2.0,0.25,,,,,,,
+city,Egypt 19 hours ago,3,Cassandra,databases,1.0,0.125,,,,,,,
+city,Egypt 19 hours ago,4,API Design,tools_practices,1.0,0.125,,,,,,,
+city,Egypt 19 hours ago,5,Design Patterns,tools_practices,1.0,0.125,,,,,,,
+city,Egypt 19 hours ago,6,iOS Development,mobile,1.0,0.125,,,,,,,
+city,Egypt 2 days ago,1,Data Engineering,data_ml_ai,23.0,0.2527,,,,,,,
+city,Egypt 2 days ago,2,iOS Development,mobile,17.0,0.1868,,,,,,,
+city,Egypt 2 days ago,3,Service Mesh,tools_practices,16.0,0.1758,,,,,,,
+city,Egypt 2 days ago,4,Statistical Analysis,data_ml_ai,15.0,0.1648,,,,,,,
+city,Egypt 2 days ago,5,Event-Driven Architecture,tools_practices,10.0,0.1099,,,,,,,
+city,Egypt 2 days ago,6,Cross-Platform Development,mobile,10.0,0.1099,,,,,,,
+city,Egypt 2 days ago,7,API Design,tools_practices,8.0,0.0879,,,,,,,
+city,Egypt 2 days ago,8,Cassandra,databases,6.0,0.0659,,,,,,,
+city,Egypt 2 days ago,9,Digital Forensics,cybersecurity,6.0,0.0659,,,,,,,
+city,Egypt 2 days ago,10,Recommendation Systems,data_ml_ai,4.0,0.044,,,,,,,
+city,Egypt 2 hours ago,1,API Design,tools_practices,2.0,0.5,,,,,,,
+city,Egypt 2 hours ago,2,Data Engineering,data_ml_ai,2.0,0.5,,,,,,,
+city,Egypt 2 hours ago,3,Recommendation Systems,data_ml_ai,2.0,0.5,,,,,,,
+city,Egypt 2 hours ago,4,Firebase,databases,1.0,0.25,,,,,,,
+city,Egypt 2 hours ago,5,System Design,tools_practices,1.0,0.25,,,,,,,
+city,Egypt 2 hours ago,6,iOS Development,mobile,1.0,0.25,,,,,,,
+city,Egypt 2 months ago,1,Data Engineering,data_ml_ai,439.0,0.4069,,,,,,,
+city,Egypt 2 months ago,2,iOS Development,mobile,248.0,0.2298,,,,,,,
+city,Egypt 2 months ago,3,Event-Driven Architecture,tools_practices,148.0,0.1372,,,,,,,
+city,Egypt 2 months ago,4,API Design,tools_practices,126.0,0.1168,,,,,,,
+city,Egypt 2 months ago,5,Service Mesh,tools_practices,123.0,0.114,,,,,,,
+city,Egypt 2 months ago,6,Statistical Analysis,data_ml_ai,89.0,0.0825,,,,,,,
+city,Egypt 2 months ago,7,Cross-Platform Development,mobile,84.0,0.0778,,,,,,,
+city,Egypt 2 months ago,8,Recommendation Systems,data_ml_ai,82.0,0.076,,,,,,,
+city,Egypt 2 months ago,9,Cassandra,databases,72.0,0.0667,,,,,,,
+city,Egypt 2 months ago,10,Design Patterns,tools_practices,71.0,0.0658,,,,,,,
+city,Egypt 20 days ago,1,iOS Development,mobile,21.0,0.2877,,,,,,,
+city,Egypt 20 days ago,2,Data Engineering,data_ml_ai,18.0,0.2466,,,,,,,
+city,Egypt 20 days ago,3,Service Mesh,tools_practices,12.0,0.1644,,,,,,,
+city,Egypt 20 days ago,4,API Design,tools_practices,10.0,0.137,,,,,,,
+city,Egypt 20 days ago,5,Cross-Platform Development,mobile,8.0,0.1096,,,,,,,
+city,Egypt 20 days ago,6,Statistical Analysis,data_ml_ai,7.0,0.0959,,,,,,,
+city,Egypt 20 days ago,7,Design Patterns,tools_practices,6.0,0.0822,,,,,,,
+city,Egypt 20 days ago,8,Recommendation Systems,data_ml_ai,5.0,0.0685,,,,,,,
+city,Egypt 20 days ago,9,App Store Deployment,mobile,4.0,0.0548,,,,,,,
+city,Egypt 20 days ago,10,Digital Forensics,cybersecurity,4.0,0.0548,,,,,,,
+city,Egypt 20 hours ago,1,Data Engineering,data_ml_ai,4.0,0.3636,,,,,,,
+city,Egypt 20 hours ago,2,iOS Development,mobile,4.0,0.3636,,,,,,,
+city,Egypt 20 hours ago,3,Event-Driven Architecture,tools_practices,2.0,0.1818,,,,,,,
+city,Egypt 20 hours ago,4,Power BI,data_ml_ai,2.0,0.1818,,,,,,,
+city,Egypt 20 hours ago,5,Statistical Analysis,data_ml_ai,2.0,0.1818,,,,,,,
+city,Egypt 20 hours ago,6,Cross-Platform Development,mobile,2.0,0.1818,,,,,,,
+city,Egypt 20 hours ago,7,.NET,frameworks_libraries,1.0,0.0909,,,,,,,
+city,Egypt 20 hours ago,8,Application Security,cybersecurity,1.0,0.0909,,,,,,,
+city,Egypt 20 hours ago,9,API Design,tools_practices,1.0,0.0909,,,,,,,
+city,Egypt 20 hours ago,10,Digital Forensics,cybersecurity,1.0,0.0909,,,,,,,
+city,Egypt 21 days ago,1,Data Engineering,data_ml_ai,45.0,0.3782,,,,,,,
+city,Egypt 21 days ago,2,Event-Driven Architecture,tools_practices,26.0,0.2185,,,,,,,
+city,Egypt 21 days ago,3,iOS Development,mobile,20.0,0.1681,,,,,,,
+city,Egypt 21 days ago,4,API Design,tools_practices,16.0,0.1345,,,,,,,
+city,Egypt 21 days ago,5,Service Mesh,tools_practices,13.0,0.1092,,,,,,,
+city,Egypt 21 days ago,6,Digital Forensics,cybersecurity,9.0,0.0756,,,,,,,
+city,Egypt 21 days ago,7,Design Patterns,tools_practices,9.0,0.0756,,,,,,,
+city,Egypt 21 days ago,8,Statistical Analysis,data_ml_ai,8.0,0.0672,,,,,,,
+city,Egypt 21 days ago,9,Recommendation Systems,data_ml_ai,6.0,0.0504,,,,,,,
+city,Egypt 21 days ago,10,Cross-Platform Development,mobile,5.0,0.042,,,,,,,
+city,Egypt 21 hours ago,1,API Design,tools_practices,4.0,0.5714,,,,,,,
+city,Egypt 21 hours ago,2,Data Engineering,data_ml_ai,3.0,0.4286,,,,,,,
+city,Egypt 21 hours ago,3,Computer Vision,data_ml_ai,2.0,0.2857,,,,,,,
+city,Egypt 21 hours ago,4,Design Patterns,tools_practices,2.0,0.2857,,,,,,,
+city,Egypt 21 hours ago,5,Domain-Driven Design,tools_practices,2.0,0.2857,,,,,,,
+city,Egypt 21 hours ago,6,iOS Development,mobile,2.0,0.2857,,,,,,,
+city,Egypt 21 hours ago,7,Event-Driven Architecture,tools_practices,2.0,0.2857,,,,,,,
+city,Egypt 21 hours ago,8,Burp Suite,cybersecurity,1.0,0.1429,,,,,,,
+city,Egypt 21 hours ago,9,Digital Forensics,cybersecurity,1.0,0.1429,,,,,,,
+city,Egypt 22 days ago,1,Data Engineering,data_ml_ai,27.0,0.2523,,,,,,,
+city,Egypt 22 days ago,2,Service Mesh,tools_practices,20.0,0.1869,,,,,,,
+city,Egypt 22 days ago,3,Statistical Analysis,data_ml_ai,17.0,0.1589,,,,,,,
+city,Egypt 22 days ago,4,iOS Development,mobile,16.0,0.1495,,,,,,,
+city,Egypt 22 days ago,5,API Design,tools_practices,14.0,0.1308,,,,,,,
+city,Egypt 22 days ago,6,Event-Driven Architecture,tools_practices,12.0,0.1121,,,,,,,
+city,Egypt 22 days ago,7,Design Patterns,tools_practices,10.0,0.0935,,,,,,,
+city,Egypt 22 days ago,8,Digital Forensics,cybersecurity,9.0,0.0841,,,,,,,
+city,Egypt 22 days ago,9,Cassandra,databases,7.0,0.0654,,,,,,,
+city,Egypt 22 days ago,10,Cross-Platform Development,mobile,7.0,0.0654,,,,,,,
+city,Egypt 22 hours ago,1,API Design,tools_practices,3.0,0.4286,,,,,,,
+city,Egypt 22 hours ago,2,Data Engineering,data_ml_ai,3.0,0.4286,,,,,,,
+city,Egypt 22 hours ago,3,Design Patterns,tools_practices,2.0,0.2857,,,,,,,
+city,Egypt 22 hours ago,4,Event-Driven Architecture,tools_practices,2.0,0.2857,,,,,,,
+city,Egypt 22 hours ago,5,Adobe XD,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 22 hours ago,6,Digital Forensics,cybersecurity,1.0,0.1429,,,,,,,
+city,Egypt 22 hours ago,7,Domain-Driven Design,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 22 hours ago,8,iOS Development,mobile,1.0,0.1429,,,,,,,
+city,Egypt 23 days ago,1,Data Engineering,data_ml_ai,58.0,0.4957,,,,,,,
+city,Egypt 23 days ago,2,iOS Development,mobile,28.0,0.2393,,,,,,,
+city,Egypt 23 days ago,3,Service Mesh,tools_practices,23.0,0.1966,,,,,,,
+city,Egypt 23 days ago,4,Event-Driven Architecture,tools_practices,20.0,0.1709,,,,,,,
+city,Egypt 23 days ago,5,Statistical Analysis,data_ml_ai,17.0,0.1453,,,,,,,
+city,Egypt 23 days ago,6,API Design,tools_practices,11.0,0.094,,,,,,,
+city,Egypt 23 days ago,7,Design Patterns,tools_practices,10.0,0.0855,,,,,,,
+city,Egypt 23 days ago,8,Recommendation Systems,data_ml_ai,10.0,0.0855,,,,,,,
+city,Egypt 23 days ago,9,Cross-Platform Development,mobile,9.0,0.0769,,,,,,,
+city,Egypt 23 days ago,10,Cassandra,databases,7.0,0.0598,,,,,,,
+city,Egypt 23 hours ago,1,Data Engineering,data_ml_ai,2.0,1.0,,,,,,,
+city,Egypt 23 hours ago,2,API Design,tools_practices,1.0,0.5,,,,,,,
+city,Egypt 23 hours ago,3,Cassandra,databases,1.0,0.5,,,,,,,
+city,Egypt 23 hours ago,4,Design Patterns,tools_practices,1.0,0.5,,,,,,,
+city,Egypt 23 hours ago,5,Digital Forensics,cybersecurity,1.0,0.5,,,,,,,
+city,Egypt 23 hours ago,6,Domain-Driven Design,tools_practices,1.0,0.5,,,,,,,
+city,Egypt 24 days ago,1,Data Engineering,data_ml_ai,3.0,0.4286,,,,,,,
+city,Egypt 24 days ago,2,iOS Development,mobile,2.0,0.2857,,,,,,,
+city,Egypt 24 days ago,3,API Design,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,4,Application Security,cybersecurity,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,5,Adobe XD,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,6,Cross-Platform Development,mobile,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,7,Design Patterns,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,8,Event-Driven Architecture,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,9,Domain-Driven Design,tools_practices,1.0,0.1429,,,,,,,
+city,Egypt 24 days ago,10,Firebase,databases,1.0,0.1429,,,,,,,
+city,Egypt 25 days ago,1,Data Engineering,data_ml_ai,6.0,0.375,,,,,,,
+city,Egypt 25 days ago,2,API Design,tools_practices,4.0,0.25,,,,,,,
+city,Egypt 25 days ago,3,iOS Development,mobile,4.0,0.25,,,,,,,
+city,Egypt 25 days ago,4,Event-Driven Architecture,tools_practices,4.0,0.25,,,,,,,
+city,Egypt 25 days ago,5,Service Mesh,tools_practices,4.0,0.25,,,,,,,
+city,Egypt 25 days ago,6,Digital Forensics,cybersecurity,3.0,0.1875,,,,,,,
+city,Egypt 25 days ago,7,Cross-Platform Development,mobile,3.0,0.1875,,,,,,,
+city,Egypt 25 days ago,8,Adobe XD,tools_practices,2.0,0.125,,,,,,,
+city,Egypt 25 days ago,9,Reinforcement Learning,data_ml_ai,2.0,0.125,,,,,,,
+city,Egypt 25 days ago,10,Design Patterns,tools_practices,2.0,0.125,,,,,,,
+city,Egypt 26 days ago,1,Data Engineering,data_ml_ai,3.0,0.6,,,,,,,
+city,Egypt 26 days ago,2,Service Mesh,tools_practices,2.0,0.4,,,,,,,
+city,Egypt 26 days ago,3,Event-Driven Architecture,tools_practices,2.0,0.4,,,,,,,
+city,Egypt 26 days ago,4,API Design,tools_practices,1.0,0.2,,,,,,,
+city,Egypt 26 days ago,5,GDPR Compliance,cybersecurity,1.0,0.2,,,,,,,
+city,Egypt 27 days ago,1,Data Engineering,data_ml_ai,9.0,0.6,,,,,,,
+city,Egypt 27 days ago,2,iOS Development,mobile,4.0,0.2667,,,,,,,
+city,Egypt 27 days ago,3,Statistical Analysis,data_ml_ai,4.0,0.2667,,,,,,,
+city,Egypt 27 days ago,4,API Design,tools_practices,3.0,0.2,,,,,,,
+city,Egypt 27 days ago,5,Design Patterns,tools_practices,2.0,0.1333,,,,,,,
+city,Egypt 27 days ago,6,Cassandra,databases,1.0,0.0667,,,,,,,
+city,Egypt 27 days ago,7,Adobe XD,tools_practices,1.0,0.0667,,,,,,,
+city,Egypt 27 days ago,8,ELK Stack,devops_cloud,1.0,0.0667,,,,,,,
+city,Egypt 27 days ago,9,Event-Driven Architecture,tools_practices,1.0,0.0667,,,,,,,
+city,Egypt 27 days ago,10,Deep Learning,data_ml_ai,1.0,0.0667,,,,,,,
+city,Egypt 28 days ago,1,Data Engineering,data_ml_ai,14.0,0.4667,,,,,,,
+city,Egypt 28 days ago,2,iOS Development,mobile,11.0,0.3667,,,,,,,
+city,Egypt 28 days ago,3,Cross-Platform Development,mobile,6.0,0.2,,,,,,,
+city,Egypt 28 days ago,4,API Design,tools_practices,5.0,0.1667,,,,,,,
+city,Egypt 28 days ago,5,Recommendation Systems,data_ml_ai,4.0,0.1333,,,,,,,
+city,Egypt 28 days ago,6,Statistical Analysis,data_ml_ai,4.0,0.1333,,,,,,,
+city,Egypt 28 days ago,7,Event-Driven Architecture,tools_practices,3.0,0.1,,,,,,,
+city,Egypt 28 days ago,8,Design Patterns,tools_practices,3.0,0.1,,,,,,,
+city,Egypt 28 days ago,9,Adobe XD,tools_practices,3.0,0.1,,,,,,,
+city,Egypt 28 days ago,10,Service Mesh,tools_practices,3.0,0.1,,,,,,,
+city,Egypt 29 days ago,1,Data Engineering,data_ml_ai,37.0,0.4353,,,,,,,
+city,Egypt 29 days ago,2,iOS Development,mobile,25.0,0.2941,,,,,,,
+city,Egypt 29 days ago,3,Event-Driven Architecture,tools_practices,14.0,0.1647,,,,,,,
+city,Egypt 29 days ago,4,API Design,tools_practices,12.0,0.1412,,,,,,,
+city,Egypt 29 days ago,5,Design Patterns,tools_practices,10.0,0.1176,,,,,,,
+city,Egypt 29 days ago,6,Cassandra,databases,9.0,0.1059,,,,,,,
+city,Egypt 29 days ago,7,Cross-Platform Development,mobile,8.0,0.0941,,,,,,,
+city,Egypt 29 days ago,8,Digital Forensics,cybersecurity,8.0,0.0941,,,,,,,
+city,Egypt 29 days ago,9,Service Mesh,tools_practices,8.0,0.0941,,,,,,,
+city,Egypt 29 days ago,10,Recommendation Systems,data_ml_ai,7.0,0.0824,,,,,,,
+city,Egypt 3 days ago,1,Data Engineering,data_ml_ai,11.0,0.2821,,,,,,,
+city,Egypt 3 days ago,2,iOS Development,mobile,9.0,0.2308,,,,,,,
+city,Egypt 3 days ago,3,API Design,tools_practices,7.0,0.1795,,,,,,,
+city,Egypt 3 days ago,4,Service Mesh,tools_practices,5.0,0.1282,,,,,,,
+city,Egypt 3 days ago,5,Event-Driven Architecture,tools_practices,4.0,0.1026,,,,,,,
+city,Egypt 3 days ago,6,JavaScript,programming_languages,3.0,0.0769,,,,,,,
+city,Egypt 3 days ago,7,Recommendation Systems,data_ml_ai,3.0,0.0769,,,,,,,
+city,Egypt 3 days ago,8,Java,programming_languages,3.0,0.0769,,,,,,,
+city,Egypt 3 days ago,9,Statistical Analysis,data_ml_ai,2.0,0.0513,,,,,,,
+city,Egypt 3 days ago,10,Large Language Models,data_ml_ai,2.0,0.0513,,,,,,,
+city,Egypt 30 days ago,1,Data Engineering,data_ml_ai,37.0,0.5692,,,,,,,
+city,Egypt 30 days ago,2,iOS Development,mobile,20.0,0.3077,,,,,,,
+city,Egypt 30 days ago,3,API Design,tools_practices,11.0,0.1692,,,,,,,
+city,Egypt 30 days ago,4,Design Patterns,tools_practices,9.0,0.1385,,,,,,,
+city,Egypt 30 days ago,5,Statistical Analysis,data_ml_ai,9.0,0.1385,,,,,,,
+city,Egypt 30 days ago,6,Event-Driven Architecture,tools_practices,8.0,0.1231,,,,,,,
+city,Egypt 30 days ago,7,Service Mesh,tools_practices,7.0,0.1077,,,,,,,
+city,Egypt 30 days ago,8,Cassandra,databases,6.0,0.0923,,,,,,,
+city,Egypt 30 days ago,9,Digital Forensics,cybersecurity,5.0,0.0769,,,,,,,
+city,Egypt 30 days ago,10,Cross-Platform Development,mobile,4.0,0.0615,,,,,,,
+city,Egypt 4 days ago,1,Data Engineering,data_ml_ai,31.0,0.4366,,,,,,,
+city,Egypt 4 days ago,2,iOS Development,mobile,13.0,0.1831,,,,,,,
+city,Egypt 4 days ago,3,API Design,tools_practices,12.0,0.169,,,,,,,
+city,Egypt 4 days ago,4,Recommendation Systems,data_ml_ai,12.0,0.169,,,,,,,
+city,Egypt 4 days ago,5,Event-Driven Architecture,tools_practices,11.0,0.1549,,,,,,,
+city,Egypt 4 days ago,6,Design Patterns,tools_practices,7.0,0.0986,,,,,,,
+city,Egypt 4 days ago,7,Cross-Platform Development,mobile,7.0,0.0986,,,,,,,
+city,Egypt 4 days ago,8,Service Mesh,tools_practices,6.0,0.0845,,,,,,,
+city,Egypt 4 days ago,9,Cassandra,databases,6.0,0.0845,,,,,,,
+city,Egypt 4 days ago,10,System Design,tools_practices,3.0,0.0423,,,,,,,
+city,Egypt 4 hours ago,1,API Design,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,2,Adobe XD,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,3,Cassandra,databases,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,4,Data Engineering,data_ml_ai,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,5,Design Patterns,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,6,Event-Driven Architecture,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,7,Microservices,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 4 hours ago,8,Service Mesh,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 5 days ago,1,Data Engineering,data_ml_ai,8.0,0.3333,,,,,,,
+city,Egypt 5 days ago,2,Service Mesh,tools_practices,4.0,0.1667,,,,,,,
+city,Egypt 5 days ago,3,iOS Development,mobile,4.0,0.1667,,,,,,,
+city,Egypt 5 days ago,4,Cross-Platform Development,mobile,3.0,0.125,,,,,,,
+city,Egypt 5 days ago,5,Statistical Analysis,data_ml_ai,3.0,0.125,,,,,,,
+city,Egypt 5 days ago,6,Adobe XD,tools_practices,2.0,0.0833,,,,,,,
+city,Egypt 5 days ago,7,API Design,tools_practices,2.0,0.0833,,,,,,,
+city,Egypt 5 days ago,8,Recommendation Systems,data_ml_ai,2.0,0.0833,,,,,,,
+city,Egypt 5 days ago,9,Design Patterns,tools_practices,2.0,0.0833,,,,,,,
+city,Egypt 5 days ago,10,AWS,devops_cloud,1.0,0.0417,,,,,,,
+city,Egypt 5 hours ago,1,Cassandra,databases,1.0,0.3333,,,,,,,
+city,Egypt 5 hours ago,2,Data Engineering,data_ml_ai,1.0,0.3333,,,,,,,
+city,Egypt 5 hours ago,3,Event-Driven Architecture,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 5 hours ago,4,Microservices,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 5 hours ago,5,Service Mesh,tools_practices,1.0,0.3333,,,,,,,
+city,Egypt 5 hours ago,6,iOS Development,mobile,1.0,0.3333,,,,,,,
+city,Egypt 6 days ago,1,Data Engineering,data_ml_ai,23.0,0.3966,,,,,,,
+city,Egypt 6 days ago,2,iOS Development,mobile,13.0,0.2241,,,,,,,
+city,Egypt 6 days ago,3,API Design,tools_practices,11.0,0.1897,,,,,,,
+city,Egypt 6 days ago,4,Statistical Analysis,data_ml_ai,8.0,0.1379,,,,,,,
+city,Egypt 6 days ago,5,Service Mesh,tools_practices,7.0,0.1207,,,,,,,
+city,Egypt 6 days ago,6,Event-Driven Architecture,tools_practices,7.0,0.1207,,,,,,,
+city,Egypt 6 days ago,7,Design Patterns,tools_practices,7.0,0.1207,,,,,,,
+city,Egypt 6 days ago,8,Cross-Platform Development,mobile,5.0,0.0862,,,,,,,
+city,Egypt 6 days ago,9,Cassandra,databases,5.0,0.0862,,,,,,,
+city,Egypt 6 days ago,10,Adobe XD,tools_practices,4.0,0.069,,,,,,,
+city,Egypt 6 hours ago,1,Data Engineering,data_ml_ai,1.0,0.5,,,,,,,
+city,Egypt 6 hours ago,2,LightGBM,frameworks_libraries,1.0,0.5,,,,,,,
+city,Egypt 6 hours ago,3,Recommendation Systems,data_ml_ai,1.0,0.5,,,,,,,
+city,Egypt 6 hours ago,4,iOS Development,mobile,1.0,0.5,,,,,,,
+city,Egypt 7 days ago,1,Data Engineering,data_ml_ai,61.0,0.4621,,,,,,,
+city,Egypt 7 days ago,2,iOS Development,mobile,30.0,0.2273,,,,,,,
+city,Egypt 7 days ago,3,API Design,tools_practices,24.0,0.1818,,,,,,,
+city,Egypt 7 days ago,4,Event-Driven Architecture,tools_practices,22.0,0.1667,,,,,,,
+city,Egypt 7 days ago,5,Service Mesh,tools_practices,17.0,0.1288,,,,,,,
+city,Egypt 7 days ago,6,Statistical Analysis,data_ml_ai,14.0,0.1061,,,,,,,
+city,Egypt 7 days ago,7,Cross-Platform Development,mobile,12.0,0.0909,,,,,,,
+city,Egypt 7 days ago,8,Design Patterns,tools_practices,11.0,0.0833,,,,,,,
+city,Egypt 7 days ago,9,Recommendation Systems,data_ml_ai,8.0,0.0606,,,,,,,
+city,Egypt 7 days ago,10,Agile,tools_practices,7.0,0.053,,,,,,,
+city,Egypt 8 days ago,1,Data Engineering,data_ml_ai,48.0,0.3934,,,,,,,
+city,Egypt 8 days ago,2,iOS Development,mobile,26.0,0.2131,,,,,,,
+city,Egypt 8 days ago,3,Event-Driven Architecture,tools_practices,22.0,0.1803,,,,,,,
+city,Egypt 8 days ago,4,API Design,tools_practices,17.0,0.1393,,,,,,,
+city,Egypt 8 days ago,5,Service Mesh,tools_practices,15.0,0.123,,,,,,,
+city,Egypt 8 days ago,6,Statistical Analysis,data_ml_ai,12.0,0.0984,,,,,,,
+city,Egypt 8 days ago,7,Design Patterns,tools_practices,12.0,0.0984,,,,,,,
+city,Egypt 8 days ago,8,Recommendation Systems,data_ml_ai,10.0,0.082,,,,,,,
+city,Egypt 8 days ago,9,Digital Forensics,cybersecurity,6.0,0.0492,,,,,,,
+city,Egypt 8 days ago,10,Cross-Platform Development,mobile,5.0,0.041,,,,,,,
+city,Egypt 8 hours ago,1,Data Engineering,data_ml_ai,2.0,1.0,,,,,,,
+city,Egypt 8 hours ago,2,API Design,tools_practices,1.0,0.5,,,,,,,
+city,Egypt 8 hours ago,3,Application Security,cybersecurity,1.0,0.5,,,,,,,
+city,Egypt 8 hours ago,4,Design Patterns,tools_practices,1.0,0.5,,,,,,,
+city,Egypt 8 hours ago,5,Firewalls,cybersecurity,1.0,0.5,,,,,,,
+city,Egypt 8 hours ago,6,iOS Development,mobile,1.0,0.5,,,,,,,
+city,Egypt 9 days ago,1,Data Engineering,data_ml_ai,40.0,0.3175,,,,,,,
+city,Egypt 9 days ago,2,iOS Development,mobile,34.0,0.2698,,,,,,,
+city,Egypt 9 days ago,3,Service Mesh,tools_practices,17.0,0.1349,,,,,,,
+city,Egypt 9 days ago,4,Statistical Analysis,data_ml_ai,16.0,0.127,,,,,,,
+city,Egypt 9 days ago,5,Event-Driven Architecture,tools_practices,12.0,0.0952,,,,,,,
+city,Egypt 9 days ago,6,API Design,tools_practices,12.0,0.0952,,,,,,,
+city,Egypt 9 days ago,7,Cross-Platform Development,mobile,11.0,0.0873,,,,,,,
+city,Egypt 9 days ago,8,Design Patterns,tools_practices,10.0,0.0794,,,,,,,
+city,Egypt 9 days ago,9,Recommendation Systems,data_ml_ai,9.0,0.0714,,,,,,,
+city,Egypt 9 days ago,10,Digital Forensics,cybersecurity,7.0,0.0556,,,,,,,
+city,Egypt 9 hours ago,1,iOS Development,mobile,3.0,0.1875,,,,,,,
+city,Egypt 9 hours ago,2,Data Engineering,data_ml_ai,3.0,0.1875,,,,,,,
+city,Egypt 9 hours ago,3,Service Mesh,tools_practices,2.0,0.125,,,,,,,
+city,Egypt 9 hours ago,4,Statistical Analysis,data_ml_ai,2.0,0.125,,,,,,,
+city,Egypt 9 hours ago,5,Cassandra,databases,1.0,0.0625,,,,,,,
+city,Egypt 9 hours ago,6,Burp Suite,cybersecurity,1.0,0.0625,,,,,,,
+city,Egypt 9 hours ago,7,Oracle DB,databases,1.0,0.0625,,,,,,,
+city,Egypt 9 hours ago,8,Event-Driven Architecture,tools_practices,1.0,0.0625,,,,,,,
+city,Egypt 9 hours ago,9,Cross-Platform Development,mobile,1.0,0.0625,,,,,,,
+city,Egypt 9 hours ago,10,SQL,programming_languages,1.0,0.0625,,,,,,,
+city,Giza,1,Data Engineering,data_ml_ai,21.0,0.6364,,,,,,,
+city,Giza,2,Event-Driven Architecture,tools_practices,7.0,0.2121,,,,,,,
+city,Giza,3,Statistical Analysis,data_ml_ai,4.0,0.1212,,,,,,,
+city,Giza,4,API Design,tools_practices,4.0,0.1212,,,,,,,
+city,Giza,5,iOS Development,mobile,3.0,0.0909,,,,,,,
+city,Giza,6,Digital Forensics,cybersecurity,2.0,0.0606,,,,,,,
+city,Giza,7,Design Patterns,tools_practices,2.0,0.0606,,,,,,,
+city,Giza,8,Cassandra,databases,2.0,0.0606,,,,,,,
+city,Giza,9,Service Mesh,tools_practices,2.0,0.0606,,,,,,,
+city,Giza,10,Computer Vision,data_ml_ai,1.0,0.0303,,,,,,,
+city,Matruh,1,Data Engineering,data_ml_ai,2.0,1.0,,,,,,,
+city,Matruh,2,Event-Driven Architecture,tools_practices,2.0,1.0,,,,,,,
+city,Matruh,3,API Design,tools_practices,1.0,0.5,,,,,,,
+city,Matruh,4,Design Patterns,tools_practices,1.0,0.5,,,,,,,
+city,Monufya,1,C,programming_languages,1.0,0.5,,,,,,,
+city,Monufya,2,Data Engineering,data_ml_ai,1.0,0.5,,,,,,,
+city,Monufya,3,Power BI,data_ml_ai,1.0,0.5,,,,,,,
+city,Qalubia,1,Data Engineering,data_ml_ai,4.0,0.6667,,,,,,,
+city,Qalubia,2,Cassandra,databases,2.0,0.3333,,,,,,,
+city,Qalubia,3,Event-Driven Architecture,tools_practices,1.0,0.1667,,,,,,,
+city,Qalubia,4,Statistical Analysis,data_ml_ai,1.0,0.1667,,,,,,,
+city,Sharqia,1,Data Engineering,data_ml_ai,4.0,0.5714,,,,,,,
+city,Sharqia,2,Event-Driven Architecture,tools_practices,1.0,0.1429,,,,,,,
+city,Sharqia,3,ISO 27001,cybersecurity,1.0,0.1429,,,,,,,
+city,Sharqia,4,Oracle DB,databases,1.0,0.1429,,,,,,,
+city,Sharqia,5,Reinforcement Learning,data_ml_ai,1.0,0.1429,,,,,,,
+city,Sharqia,6,Statistical Analysis,data_ml_ai,1.0,0.1429,,,,,,,
+city,Sharqia,7,iOS Development,mobile,1.0,0.1429,,,,,,,
+gap_analysis,all,1,Data Engineering,data_ml_ai,,0.3986,1.0,251.0,1124.0,331.0,0.7583,0.2249,False
+gap_analysis,all,2,iOS Development,mobile,,0.222,2.0,200.0,535.0,218.0,0.9174,0.1445,False
+gap_analysis,all,3,Statistical Analysis,data_ml_ai,,0.102,6.0,125.0,252.0,61.0,2.0492,0.1137,True
+gap_analysis,all,4,Event-Driven Architecture,tools_practices,,0.1372,3.0,89.0,421.0,79.0,1.1266,0.1035,False
+gap_analysis,all,5,Recommendation Systems,data_ml_ai,,0.0701,9.0,62.0,193.0,46.0,1.3478,0.0598,False
+gap_analysis,all,6,API Design,tools_practices,,0.126,5.0,60.0,368.0,113.0,0.531,0.0537,False
+gap_analysis,all,7,Cross-Platform Development,mobile,,0.075,8.0,78.0,167.0,77.0,1.013,0.0525,False
+gap_analysis,all,8,Service Mesh,tools_practices,,0.1325,4.0,110.0,211.0,248.0,0.4435,0.0486,False
+gap_analysis,all,9,Cassandra,databases,,0.0515,10.0,57.0,125.0,39.0,1.4615,0.0464,False
+gap_analysis,all,10,Digital Forensics,cybersecurity,,0.0454,11.0,54.0,106.0,35.0,1.5429,0.0424,True
+gap_analysis,all,11,GDPR Compliance,cybersecurity,,0.0186,14.0,29.0,46.0,5.0,5.8,0.0357,True
+gap_analysis,all,12,Design Patterns,tools_practices,,0.0752,7.0,22.0,220.0,81.0,0.2716,0.0181,False
+gap_analysis,all,13,Java,programming_languages,,0.0175,15.0,10.0,57.0,8.0,1.25,0.0142,False
+gap_analysis,all,14,Application Security,cybersecurity,,0.0156,18.0,14.0,43.0,10.0,1.4,0.0137,False
+gap_analysis,all,15,Python,programming_languages,,0.0161,17.0,10.0,47.0,12.0,0.8333,0.0098,False
+gap_analysis,all,16,JavaScript,programming_languages,,0.0147,20.0,7.0,48.0,8.0,0.875,0.0092,False
+gap_analysis,all,17,Domain-Driven Design,tools_practices,,0.0275,12.0,7.0,86.0,25.0,0.28,0.0068,False
+gap_analysis,all,18,Power BI,data_ml_ai,,0.0151,19.0,6.0,45.0,13.0,0.4615,0.0057,False
+gap_analysis,all,19,Adobe XD,tools_practices,,0.0266,13.0,6.0,81.0,27.0,0.2222,0.0053,False
+gap_analysis,all,20,SQL,programming_languages,,0.017,16.0,5.0,54.0,14.0,0.3571,0.0052,False
+gap_analysis,all,21,Angular,frameworks_libraries,,0.0,9999.0,2.0,17.0,2.0,1.0,0.0,False
+gap_analysis,all,22,Ansible,devops_cloud,,0.0,9999.0,1.0,0.0,0.0,1.0,0.0,False
+gap_analysis,all,23,App Store Deployment,mobile,,0.0,9999.0,9.0,8.0,6.0,1.5,0.0,False
+gap_analysis,all,24,Appium,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,25,Apache Spark,frameworks_libraries,,0.0,9999.0,2.0,2.0,0.0,2.0,0.0,False
+gap_analysis,all,26,Apache,devops_cloud,,0.0,9999.0,2.0,2.0,0.0,2.0,0.0,False
+gap_analysis,all,27,Burp Suite,cybersecurity,,0.0,9999.0,5.0,36.0,13.0,0.3846,0.0,False
+gap_analysis,all,28,Bootstrap,frameworks_libraries,,0.0,9999.0,1.0,6.0,0.0,1.0,0.0,False
+gap_analysis,all,29,BigQuery,databases,,0.0,9999.0,1.0,4.0,1.0,1.0,0.0,False
+gap_analysis,all,30,Bash Scripting,devops_cloud,,0.0,9999.0,0.0,2.0,1.0,0.0,0.0,False
+gap_analysis,all,31,Bash,programming_languages,,0.0,9999.0,0.0,1.0,1.0,0.0,0.0,False
+gap_analysis,all,32,BLE / Bluetooth,mobile,,0.0,9999.0,1.0,2.0,0.0,1.0,0.0,False
+gap_analysis,all,33,Azure DevOps,devops_cloud,,0.0,9999.0,4.0,11.0,4.0,1.0,0.0,False
+gap_analysis,all,34,C++,programming_languages,,0.0,9999.0,0.0,3.0,3.0,0.0,0.0,False
+gap_analysis,all,35,Code Review,tools_practices,,0.0,9999.0,2.0,5.0,0.0,2.0,0.0,False
+gap_analysis,all,36,Computer Vision,data_ml_ai,,0.0,9999.0,4.0,6.0,2.0,2.0,0.0,False
+gap_analysis,all,37,Core Data,mobile,,0.0,9999.0,1.0,1.0,0.0,1.0,0.0,False
+gap_analysis,all,38,C,programming_languages,,0.0,9999.0,5.0,14.0,1.0,5.0,0.0,False
+gap_analysis,all,39,CI/CD,devops_cloud,,0.0,9999.0,5.0,7.0,2.0,2.5,0.0,False
+gap_analysis,all,40,Cloud Security,cybersecurity,,0.0,9999.0,2.0,5.0,0.0,2.0,0.0,False
+gap_analysis,all,41,CloudFormation,devops_cloud,,0.0,9999.0,0.0,2.0,2.0,0.0,0.0,False
+gap_analysis,all,42,C#,programming_languages,,0.0,9999.0,1.0,15.0,1.0,1.0,0.0,False
+gap_analysis,all,43,Dart,programming_languages,,0.0,9999.0,1.0,2.0,1.0,1.0,0.0,False
+gap_analysis,all,44,DNS,devops_cloud,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,45,Cypress,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,46,Cybersecurity,cybersecurity,,0.0,9999.0,3.0,8.0,0.0,3.0,0.0,False
+gap_analysis,all,47,Couchbase,databases,,0.0,9999.0,0.0,0.0,1.0,0.0,0.0,False
+gap_analysis,all,48,Databricks,data_ml_ai,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,49,ArgoCD,devops_cloud,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,50,Asana,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,51,Azure,devops_cloud,,0.0,9999.0,2.0,14.0,1.0,2.0,0.0,False
+gap_analysis,all,52,A/B Testing,data_ml_ai,,0.0,9999.0,4.0,27.0,6.0,0.6667,0.0,False
+gap_analysis,all,53,ASP.NET,frameworks_libraries,,0.0,9999.0,2.0,18.0,0.0,2.0,0.0,False
+gap_analysis,all,54,.NET,frameworks_libraries,,0.0,9999.0,4.0,26.0,5.0,0.8,0.0,False
+gap_analysis,all,55,Agile,tools_practices,,0.0,9999.0,5.0,24.0,4.0,1.25,0.0,False
+gap_analysis,all,56,Airflow,frameworks_libraries,,0.0,9999.0,3.0,7.0,3.0,1.0,0.0,False
+gap_analysis,all,57,Android Development,mobile,,0.0,9999.0,9.0,36.0,16.0,0.5625,0.0,False
+gap_analysis,all,58,AWS,devops_cloud,,0.0,9999.0,10.0,16.0,1.0,10.0,0.0,False
+gap_analysis,all,59,Ethical Hacking,cybersecurity,,0.0,9999.0,0.0,2.0,1.0,0.0,0.0,False
+gap_analysis,all,60,Encryption,cybersecurity,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,61,Elasticsearch,databases,,0.0,9999.0,0.0,1.0,3.0,0.0,0.0,False
+gap_analysis,all,62,ETL,data_ml_ai,,0.0,9999.0,1.0,2.0,1.0,1.0,0.0,False
+gap_analysis,all,63,DynamoDB,databases,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,64,ELK Stack,devops_cloud,,0.0,9999.0,2.0,29.0,3.0,0.6667,0.0,False
+gap_analysis,all,65,Django,frameworks_libraries,,0.0,9999.0,2.0,4.0,1.0,2.0,0.0,False
+gap_analysis,all,66,Docker,devops_cloud,,0.0,9999.0,12.0,24.0,2.0,6.0,0.0,False
+gap_analysis,all,67,Data Warehouse,data_ml_ai,,0.0,9999.0,17.0,12.0,6.0,2.8333,0.0,False
+gap_analysis,all,68,Deep Learning,data_ml_ai,,0.0,9999.0,5.0,16.0,6.0,0.8333,0.0,False
+gap_analysis,all,69,Flutter,frameworks_libraries,,0.0,9999.0,1.0,5.0,0.0,1.0,0.0,False
+gap_analysis,all,70,Express.js,frameworks_libraries,,0.0,9999.0,0.0,3.0,1.0,0.0,0.0,False
+gap_analysis,all,71,Firebase,databases,,0.0,9999.0,4.0,23.0,1.0,4.0,0.0,False
+gap_analysis,all,72,Firewalls,cybersecurity,,0.0,9999.0,1.0,9.0,1.0,1.0,0.0,False
+gap_analysis,all,73,Feature Engineering,data_ml_ai,,0.0,9999.0,4.0,19.0,4.0,1.0,0.0,False
+gap_analysis,all,74,FastAPI,frameworks_libraries,,0.0,9999.0,2.0,3.0,0.0,2.0,0.0,False
+gap_analysis,all,75,Go,programming_languages,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,76,GitLab,tools_practices,,0.0,9999.0,1.0,4.0,2.0,0.5,0.0,False
+gap_analysis,all,77,Google Play Deployment,mobile,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,78,Grafana,devops_cloud,,0.0,9999.0,1.0,0.0,0.0,1.0,0.0,False
+gap_analysis,all,79,Hadoop,frameworks_libraries,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,80,Helm,devops_cloud,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,81,GraphQL,frameworks_libraries,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,82,HAProxy,devops_cloud,,0.0,9999.0,1.0,11.0,2.0,0.5,0.0,False
+gap_analysis,all,83,IAM,devops_cloud,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,84,GCP,devops_cloud,,0.0,9999.0,0.0,5.0,0.0,0.0,0.0,False
+gap_analysis,all,85,Generative AI,data_ml_ai,,0.0,9999.0,1.0,12.0,6.0,0.1667,0.0,False
+gap_analysis,all,86,Git,tools_practices,,0.0,9999.0,9.0,36.0,14.0,0.6429,0.0,False
+gap_analysis,all,87,GitHub,tools_practices,,0.0,9999.0,0.0,2.0,1.0,0.0,0.0,False
+gap_analysis,all,88,GitHub Actions,devops_cloud,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,89,Flask,frameworks_libraries,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,90,Figma,tools_practices,,0.0,9999.0,1.0,3.0,2.0,0.5,0.0,False
+gap_analysis,all,91,Jenkins,devops_cloud,,0.0,9999.0,3.0,4.0,1.0,3.0,0.0,False
+gap_analysis,all,92,Jetpack Compose,frameworks_libraries,,0.0,9999.0,0.0,4.0,0.0,0.0,0.0,False
+gap_analysis,all,93,Jira,tools_practices,,0.0,9999.0,4.0,6.0,1.0,4.0,0.0,False
+gap_analysis,all,94,Kafka,frameworks_libraries,,0.0,9999.0,2.0,1.0,0.0,2.0,0.0,False
+gap_analysis,all,95,Kanban,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,96,Kotlin,programming_languages,,0.0,9999.0,0.0,4.0,1.0,0.0,0.0,False
+gap_analysis,all,97,Kubernetes,devops_cloud,,0.0,9999.0,4.0,7.0,1.0,4.0,0.0,False
+gap_analysis,all,98,LangChain,data_ml_ai,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,99,Laravel,frameworks_libraries,,0.0,9999.0,1.0,13.0,0.0,1.0,0.0,False
+gap_analysis,all,100,Large Language Models,data_ml_ai,,0.0,9999.0,2.0,14.0,9.0,0.2222,0.0,False
+gap_analysis,all,101,Lean,tools_practices,,0.0,9999.0,0.0,0.0,1.0,0.0,0.0,False
+gap_analysis,all,102,LightGBM,frameworks_libraries,,0.0,9999.0,3.0,7.0,0.0,3.0,0.0,False
+gap_analysis,all,103,Linux,devops_cloud,,0.0,9999.0,3.0,9.0,5.0,0.6,0.0,False
+gap_analysis,all,104,MATLAB,programming_languages,,0.0,9999.0,2.0,3.0,1.0,2.0,0.0,False
+gap_analysis,all,105,MLOps,data_ml_ai,,0.0,9999.0,1.0,0.0,0.0,1.0,0.0,False
+gap_analysis,all,106,Machine Learning,data_ml_ai,,0.0,9999.0,1.0,11.0,4.0,0.25,0.0,False
+gap_analysis,all,107,Metabase,data_ml_ai,,0.0,9999.0,1.0,7.0,0.0,1.0,0.0,False
+gap_analysis,all,108,Microservices,tools_practices,,0.0,9999.0,8.0,13.0,9.0,0.8889,0.0,False
+gap_analysis,all,109,Mobile UI Design,mobile,,0.0,9999.0,3.0,19.0,7.0,0.4286,0.0,False
+gap_analysis,all,110,Model Deployment,data_ml_ai,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,111,MongoDB,databases,,0.0,9999.0,1.0,7.0,2.0,0.5,0.0,False
+gap_analysis,all,112,MySQL,databases,,0.0,9999.0,0.0,11.0,3.0,0.0,0.0,False
+gap_analysis,all,113,NLP,data_ml_ai,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,114,NestJS,frameworks_libraries,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,115,Network Security,cybersecurity,,0.0,9999.0,14.0,30.0,15.0,0.9333,0.0,False
+gap_analysis,all,116,Hugging Face,data_ml_ai,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,117,IDS/IPS,cybersecurity,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,118,ISO 27001,cybersecurity,,0.0,9999.0,9.0,14.0,5.0,1.8,0.0,False
+gap_analysis,all,119,JMeter,tools_practices,,0.0,9999.0,0.0,1.0,1.0,0.0,0.0,False
+gap_analysis,all,120,Incident Response,cybersecurity,,0.0,9999.0,3.0,8.0,3.0,1.0,0.0,False
+gap_analysis,all,121,JWT,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,122,JUnit,tools_practices,,0.0,9999.0,7.0,3.0,0.0,7.0,0.0,False
+gap_analysis,all,123,Oracle DB,databases,,0.0,9999.0,8.0,28.0,4.0,2.0,0.0,False
+gap_analysis,all,124,OAuth,tools_practices,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,125,NumPy,frameworks_libraries,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,126,Node.js,frameworks_libraries,,0.0,9999.0,3.0,13.0,2.0,1.5,0.0,False
+gap_analysis,all,127,Next.js,frameworks_libraries,,0.0,9999.0,1.0,5.0,1.0,1.0,0.0,False
+gap_analysis,all,128,New Relic,devops_cloud,,0.0,9999.0,1.0,1.0,4.0,0.25,0.0,False
+gap_analysis,all,129,Networking,devops_cloud,,0.0,9999.0,4.0,18.0,7.0,0.5714,0.0,False
+gap_analysis,all,130,Penetration Testing,cybersecurity,,0.0,9999.0,0.0,6.0,3.0,0.0,0.0,False
+gap_analysis,all,131,Postman,tools_practices,,0.0,9999.0,1.0,1.0,2.0,0.5,0.0,False
+gap_analysis,all,132,PowerShell,programming_languages,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,133,Push Notifications,mobile,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,134,Prometheus,devops_cloud,,0.0,9999.0,2.0,6.0,1.0,2.0,0.0,False
+gap_analysis,all,135,PyTorch,frameworks_libraries,,0.0,9999.0,1.0,2.0,0.0,1.0,0.0,False
+gap_analysis,all,136,Playwright,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,137,Pandas,frameworks_libraries,,0.0,9999.0,2.0,2.0,1.0,2.0,0.0,False
+gap_analysis,all,138,PCI-DSS,cybersecurity,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,139,RAG,data_ml_ai,,0.0,9999.0,0.0,3.0,0.0,0.0,0.0,False
+gap_analysis,all,140,R,programming_languages,,0.0,9999.0,2.0,0.0,0.0,2.0,0.0,False
+gap_analysis,all,141,React,frameworks_libraries,,0.0,9999.0,3.0,37.0,4.0,0.75,0.0,False
+gap_analysis,all,142,REST API,frameworks_libraries,,0.0,9999.0,9.0,30.0,5.0,1.8,0.0,False
+gap_analysis,all,143,Redis,databases,,0.0,9999.0,2.0,4.0,1.0,2.0,0.0,False
+gap_analysis,all,144,Redshift,databases,,0.0,9999.0,1.0,0.0,1.0,1.0,0.0,False
+gap_analysis,all,145,Reinforcement Learning,data_ml_ai,,0.0,9999.0,5.0,17.0,6.0,0.8333,0.0,False
+gap_analysis,all,146,React Native,frameworks_libraries,,0.0,9999.0,1.0,11.0,2.0,0.5,0.0,False
+gap_analysis,all,147,Ruby,programming_languages,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,148,Ruby on Rails,frameworks_libraries,,0.0,9999.0,0.0,3.0,0.0,0.0,0.0,False
+gap_analysis,all,149,SIEM,cybersecurity,,0.0,9999.0,3.0,7.0,0.0,3.0,0.0,False
+gap_analysis,all,150,SAFe,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,151,SOC,cybersecurity,,0.0,9999.0,1.0,3.0,0.0,1.0,0.0,False
+gap_analysis,all,152,Pytest,tools_practices,,0.0,9999.0,0.0,3.0,0.0,0.0,0.0,False
+gap_analysis,all,153,PostgreSQL,databases,,0.0,9999.0,5.0,12.0,2.0,2.5,0.0,False
+gap_analysis,all,154,PHP,programming_languages,,0.0,9999.0,1.0,19.0,4.0,0.25,0.0,False
+gap_analysis,all,155,Scala,programming_languages,,0.0,9999.0,0.0,3.0,0.0,0.0,0.0,False
+gap_analysis,all,156,SSO,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,157,SQL Server,databases,,0.0,9999.0,4.0,20.0,4.0,1.0,0.0,False
+gap_analysis,all,158,Seaborn,frameworks_libraries,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,159,Sketch,tools_practices,,0.0,9999.0,1.0,5.0,2.0,0.5,0.0,False
+gap_analysis,all,160,Snowflake,databases,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,161,Splunk,devops_cloud,,0.0,9999.0,0.0,2.0,0.0,0.0,0.0,False
+gap_analysis,all,162,Scrum,tools_practices,,0.0,9999.0,3.0,7.0,1.0,3.0,0.0,False
+gap_analysis,all,163,Spring Boot,frameworks_libraries,,0.0,9999.0,1.0,6.0,0.0,1.0,0.0,False
+gap_analysis,all,164,Spring Framework,frameworks_libraries,,0.0,9999.0,0.0,7.0,0.0,0.0,0.0,False
+gap_analysis,all,165,Swift,programming_languages,,0.0,9999.0,0.0,1.0,1.0,0.0,0.0,False
+gap_analysis,all,166,SwiftUI,frameworks_libraries,,0.0,9999.0,0.0,0.0,1.0,0.0,0.0,False
+gap_analysis,all,167,System Design,tools_practices,,0.0,9999.0,4.0,27.0,6.0,0.6667,0.0,False
+gap_analysis,all,168,TCP/IP,devops_cloud,,0.0,9999.0,0.0,0.0,2.0,0.0,0.0,False
+gap_analysis,all,169,Tableau,data_ml_ai,,0.0,9999.0,1.0,4.0,0.0,1.0,0.0,False
+gap_analysis,all,170,Selenium,tools_practices,,0.0,9999.0,1.0,5.0,1.0,1.0,0.0,False
+gap_analysis,all,171,Tailwind CSS,frameworks_libraries,,0.0,9999.0,1.0,3.0,0.0,1.0,0.0,False
+gap_analysis,all,172,TensorFlow,frameworks_libraries,,0.0,9999.0,5.0,8.0,0.0,5.0,0.0,False
+gap_analysis,all,173,Threat Intelligence,cybersecurity,,0.0,9999.0,3.0,12.0,2.0,1.5,0.0,False
+gap_analysis,all,174,Terraform,devops_cloud,,0.0,9999.0,2.0,2.0,0.0,2.0,0.0,False
+gap_analysis,all,175,TypeScript,programming_languages,,0.0,9999.0,4.0,19.0,3.0,1.3333,0.0,False
+gap_analysis,all,176,Unix,devops_cloud,,0.0,9999.0,0.0,1.0,1.0,0.0,0.0,False
+gap_analysis,all,177,VPN,devops_cloud,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,178,Trello,tools_practices,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,179,Vue.js,frameworks_libraries,,0.0,9999.0,0.0,9.0,0.0,0.0,0.0,False
+gap_analysis,all,180,Vulnerability Assessment,cybersecurity,,0.0,9999.0,12.0,26.0,5.0,2.4,0.0,False
+gap_analysis,all,181,Wireshark,cybersecurity,,0.0,9999.0,0.0,1.0,0.0,0.0,0.0,False
+gap_analysis,all,182,WebSocket,frameworks_libraries,,0.0,9999.0,4.0,22.0,5.0,0.8,0.0,False
+gap_analysis,all,183,Zero Trust,cybersecurity,,0.0,9999.0,0.0,1.0,4.0,0.0,0.0,False
+gap_analysis,all,184,dbt,frameworks_libraries,,0.0,9999.0,1.0,1.0,0.0,1.0,0.0,False
+gap_analysis,all,185,jQuery,frameworks_libraries,,0.0,9999.0,0.0,6.0,1.0,0.0,0.0,False
+gap_analysis,all,186,scikit-learn,frameworks_libraries,,0.0,9999.0,1.0,1.0,1.0,1.0,0.0,False
