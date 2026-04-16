@@ -224,7 +224,7 @@ def page_gap_analysis() -> None:
     st.plotly_chart(fig, use_container_width=True)
 
     st.subheader("Flagged Gaps")
-    flagged = gap_df[gap_df["gap_flag"] == True][["skill", "seniority", "skew", "count"]]
+    flagged = gap_df[gap_df["gap_flag"]][["skill", "seniority", "skew", "count"]]
     st.dataframe(flagged.sort_values("skew", ascending=False), use_container_width=True)
 
 

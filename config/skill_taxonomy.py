@@ -192,7 +192,6 @@ SKILL_TAXONOMY: dict[str, list[str]] = {
     "nosql": ["non-relational database"],
     "linux": ["ubuntu", "centos", "debian", "unix"],
     "streamlit": [],
-    "fastapi": ["fast api"],
     "pydantic": [],
     "celery": ["celery workers", "celery beat"],
     "websockets": ["websocket", "ws"],

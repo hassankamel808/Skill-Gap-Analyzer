@@ -74,7 +74,8 @@ class TestCardParserSingleCard:
         assert "days ago" in self.cards[0]["posted_date"]
 
     def test_job_url_is_absolute(self) -> None:
-        assert self.cards[0]["job_url"].startswith("https://wuzzuf.net")
+        job_url = self.cards[0]["job_url"]
+        assert job_url.startswith("https://wuzzuf.net/jobs/p/")
 
     def test_description_extracted(self) -> None:
         assert "Python" in self.cards[0]["description"]
