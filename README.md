@@ -1,7 +1,7 @@
 # 🇪🇬 Egyptian Tech Job Market — Skill-Gap Analyzer
 
 > An end-to-end data engineering pipeline and interactive analytics dashboard that scrapes, normalizes, and quantifies tech labor market trends from [Wuzzuf.net](https://wuzzuf.net) — identifying high-demand skills and emerging talent gaps in the Egyptian tech sector.
-
+**🔴 [Live Dashboard: View the Interactive Data Here](https://skill-gap-analyzer-o7bhtsbwkmabwsxc54kczt.streamlit.app/)**
 ---
 
 ## 📌 Project Overview
@@ -195,11 +195,12 @@ python main.py --analysis-only
 
 ## 📊 Streamlit Dashboard
 
+If you are developing locally and want to visualize newly generated data before pushing changes to production:
 ```bash
 streamlit run dashboard/streamlit_app.py
 ```
 
-Open: [http://localhost:8501](http://localhost:8501)
+Launch the interactive UI directly in your browser: **[Open Streamlit Dashboard](https://skill-gap-analyzer-o7bhtsbwkmabwsxc54kczt.streamlit.app/)**
 
 | Page | What It Shows |
 |---|---|
