@@ -1,330 +1,40 @@
-# Wuzzuf Skill Gap Analyzer 📈
-
-> **End-to-end data pipeline** that scrapes tech job postings from [Wuzzuf.net](https://wuzzuf.net), extracts technical skills using NLP (Regex + Fuzzy Matching), and visualises market demand vs. seniority gaps in an interactive Streamlit dashboard.
-
----
-
-## Table of Contents
-
-1. [Architecture Overview](#architecture-overview)
-2. [Repository Structure](#repository-structure)
-3. [Technical Stack](#technical-stack)
-4. [Quick Start](#quick-start)
-5. [Pipeline Modes](#pipeline-modes)
-6. [Configuration](#configuration)
-7. [Skill Taxonomy](#skill-taxonomy)
-8. [Dashboard](#dashboard)
-9. [Testing](#testing)
-10. [Output Artefacts](#output-artefacts)
-11. [Extending the Project](#extending-the-project)
-12. [Contributing](#contributing)
-13. [License](#license)
-
----
-
-## Architecture Overview
-
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                        Wuzzuf Skill Gap Analyzer                         │
-│                                                                          │
-│  ┌────────────┐    ┌────────────┐    ┌─────────────┐    ┌────────────┐  │
-│  │  Scraper   │───▶│   Parser   │───▶│ Extraction  │───▶│  Analysis  │  │
-│  │            │    │            │    │             │    │            │  │
-│  │ Selenium + │    │ BS4 HTML   │    │ Regex + NLP │    │ Demand /   │  │
-│  │ uc-driver  │    │ card parse │    │ Fuzzy Match │    │ Gap / Cooc │  │
-│  └────────────┘    └────────────┘    └─────────────┘    └─────┬──────┘  │
-│         │                                                       │        │
-│         ▼                                                       ▼        │
-│  ┌─────────────────────────────────────────────────────────────────┐    │
-│  │                    Pipeline / Orchestrator                       │    │
-│  │   StateManager (atomic JSON checkpoints)  ·  CLI (Click/Rich)   │    │
-│  └─────────────────────────────────────────────────────────────────┘    │
-│                                    │                                     │
-│                                    ▼                                     │
-│                         ┌──────────────────┐                            │
-│                         │  output/  (CSV,  │                            │
-│                         │  JSON artefacts) │                            │
-│                         └────────┬─────────┘                            │
-│                                  │                                       │
-│                                  ▼                                       │
-│                    ┌─────────────────────────────┐                      │
-│                    │  Streamlit Dashboard (5-page)│                      │
-│                    └─────────────────────────────┘                      │
-└──────────────────────────────────────────────────────────────────────────┘
-```
-
-### Data Flow
-
-| Stage | Module | Description |
-|-------|--------|-------------|
-| **Scrape** | `scraper/` | Undetected Chrome driver paginates Wuzzuf, fetches raw HTML |
-| **Parse** | `parser/` | BeautifulSoup 4 extracts structured fields from each job card |
-| **Extract** | `extraction/` | Regex + RapidFuzz fuzzy matching maps free text → canonical skills |
-| **Analyse** | `analysis/` | Demand scoring, seniority gap detection, co-occurrence matrix |
-| **Persist** | `pipeline/` | Atomic JSON checkpoints + CSV/JSON output artefacts |
-| **Visualise** | `dashboard/` | 5-page interactive Streamlit dashboard with Plotly charts |
-
----
-
-## Repository Structure
-
-```
-Skill-Gap-Analyzer/
-│
-├── config/                     # Centralised configuration
-│   ├── __init__.py
-│   ├── settings.py             # Pydantic-Settings env config
-│   ├── skill_taxonomy.py       # 200+ skills with alias mappings
-│   └── user_agents.py          # Rotating User-Agent pool
-│
-├── scraper/                    # Web scraping layer
-│   ├── __init__.py
-│   ├── driver_manager.py       # Selenium / undetected-chromedriver lifecycle
-│   └── listing_scraper.py      # Pagination logic
-│
-├── parser/                     # HTML parsing layer
-│   ├── __init__.py
-│   └── card_parser.py          # BS4 job-card extractor + seniority inference
-│
-├── extraction/                 # NLP / skill extraction
-│   ├── __init__.py
-│   ├── skill_extractor.py      # Regex + fuzzy matching + context-window gating
-│   └── normalizer.py           # Unicode / case / whitespace normalisation
-│
-├── analysis/                   # Analytics layer
-│   ├── __init__.py
-│   ├── demand_scorer.py        # Market demand scores (min-max normalised)
-│   ├── gap_analyzer.py         # Seniority skew detection
-│   └── cooccurrence.py         # Pairwise skill co-occurrence
-│
-├── pipeline/                   # Orchestration & state
-│   ├── __init__.py
-│   ├── orchestrator.py         # Master workflow (Scrape / Analysis-Only mode)
-│   └── state_manager.py        # Atomic JSON checkpoint read/write
-│
-├── dashboard/                  # Streamlit dashboard
-│   ├── __init__.py
-│   └── streamlit_app.py        # 5-page interactive Plotly/Streamlit dashboard
-│
-├── tests/                      # pytest test suite
-│   ├── __init__.py
-│   ├── test_parser.py          # CardParser unit tests
-│   └── test_extraction.py      # Normalizer + SkillExtractor unit tests
-│
-├── output/                     # Generated data artefacts (gitignored)
-│   └── .gitkeep
-│
-├── main.py                     # CLI entry point (Click + Rich)
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── README.md
-```
-
----
-
-## Technical Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Language | Python 3.10+ |
-| Web Scraping | Selenium 4, undetected-chromedriver |
-| HTML Parsing | BeautifulSoup 4, lxml |
-| Data | Pandas, NumPy |
-| NLP / Fuzzy | RapidFuzz |
-| Config | Pydantic-Settings, python-dotenv |
-| Visualisation | Plotly, Streamlit |
-| CLI | Click, Rich |
-| Testing | pytest, pytest-cov |
-
----
-
-## Quick Start
-
-### 1. Clone & set up virtual environment
-
-```bash
-git clone https://github.com/hassankamel808/Skill-Gap-Analyzer.git
-cd Skill-Gap-Analyzer
-
+🇪🇬 Egyptian Tech Job Market — Skill-Gap AnalyzerAn end-to-end data engineering pipeline and interactive analytics dashboard that scrapes, normalizes, and quantifies tech labor market trends on Wuzzuf.net. This system identifies deep market trends, high-demand skills, and emerging talent gaps in the Egyptian tech sector.📌 Project OverviewThis project answers a single question:"What technical skills does the Egyptian job market actually demand — and where are the biggest gaps?"Built as a Big Data & Analysis college project, the pipeline collects real job postings, extracts skills through a three-layer NLP engine, scores demand across role categories, and surfaces "Gap Signals" where senior talent demand outpaces junior supply.📊 Production Snapshot (April 2026)MetricValueTotal Unique Jobs Analyzed4,293Unique Companies Hiring1,488Demand Threshold1.0%Seniority Skew Min1.5xAutomated Tests Passed38 / 38 ✅📝 Key FindingsBased on our production scrape and extraction analysis, the Egyptian tech market shows clear trends:The Infrastructure Shift: Data Engineering is the dominant force in the market, appearing in 39.9% of all analyzed tech postings.The "Emerging Gap" (Highest ROI): Statistical Analysis represents the most significant talent gap. With 10.2% demand and a 2.0x seniority skew, the market is heavily demanding mid/senior data practitioners but struggling to find them.The Compliance Shortage: GDPR Compliance shows the highest overall seniority skew (5.8x). While niche (1.9% demand), companies are exclusively hiring Seniors/Consultants for data privacy, indicating a severe expertise shortage.Architectural Maturity: Cloud-native skills like Event-Driven Architecture (13.7%) and Service Mesh (13.2%) are highly demanded, proving Egyptian firms are moving rapidly beyond traditional monolithic designs.🏛 Architecture & Data FlowPlaintext
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│                 │       │                 │       │                 │
+│  Wuzzuf.net     │       │  Selenium + UC  │       │  BeautifulSoup  │
+│  Category Pages ├──────►│  Scraping Layer ├──────►│  HTML Parser    │
+│                 │       │  (Cloudflare ok)│       │                 │
+└─────────────────┘       └─────────────────┘       └────────┬────────┘
+                                                             │
+┌─────────────────┐       ┌─────────────────┐       ┌────────▼────────┐
+│                 │       │                 │       │                 │
+│  Plotly / Flow  │       │  Pandas / Math  │       │  NLP Extractor  │
+│  Dashboard UI   │◄──────┤  Analytics Hub  │◄──────┤  (3-Layer)      │
+│                 │       │                 │       │                 │
+└─────────────────┘       └─────────────────┘       └─────────────────┘
+Output ArtifactPurposeContainsraw_jobs.csvFoundation dataJob titles, normalized URLs, raw post text, explicit categoriesextracted_skills.csvNormalized taxonomyProcessed job vs. canonical skill matrices and confidence levelsanalytics_summary.csvMathematical scoringDemand percentages, seniority multipliers, generated gap signalscooccurrence_matrix.csvHeatmap generationN×N integer grid mapping skill intersections📁 Directory StructurePlaintextwuzzuf-skill-gap/
+├── analysis/            # Pure functions: demand scoring, gap analysis, co-occurrence
+├── config/              # Centralized configuration and skill taxonomy maps
+├── dashboard/           # Streamlit app and Plotly visualizations
+├── extraction/          # 3-Layer NLP extraction and token normalization
+├── output/              # Cached CSVs, exported charts, state checkpoints
+├── pipeline/            # Orchestration logic and resilient state manager
+├── scraper/             # Selenium drivers, pagination handling, and requests
+├── tests/               # Pytest suite
+├── main.py              # CLI Master Entry Point
+└── requirements.txt     # Dependency definitions
+🧠 Technical HighlightsBuilt with extreme resilience, our data extraction and analysis pipeline isn't just a basic scraper:1. The 3-Layer NLP Extraction EngineTo balance Precision and Recall, skills are extracted using a waterfall approach:Direct Tags (Conf: 1.0): Pulls Wuzzuf's explicit metadata.Taxonomy Regex (Conf: 0.95): Word-boundary scans for canonical skills.RapidFuzz Fallback (Conf: 0.85): Catches typos and aliases using fuzzy matching.2. False-Positive Context GatingA common issue in NLP is conflating generic terms with technical skills. To combat this, we inject a ±60-character context window boundary. For example, the system will actively suppress "Time Series Analysis" if it was triggered simply because a listing said "Full-Time" and "Analysis" somewhere nearby but lacked the explicit word "series".3. Absolute Math & Crash RecoveryDemand percentages are calculated using job_id.nunique() to ensure perfect denominators, even if the Wuzzuf pagination logic duplicates a listing mid-scrape.The scraper uses atomic os.replace JSON checkpoints. If the script crashes, it resumes from the exact page it left off.⚙️ Setup & InstallationPrerequisites: Python 3.10+, Google ChromeBashgit clone https://github.com/YOUR_USERNAME/wuzzuf-skill-gap.git
+cd wuzzuf-skill-gap
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# Activate Virtual Environment
+source .venv/bin/activate  # macOS / Linux
+.venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
-```
-
-### 2. Configure environment
-
-```bash
 cp .env.example .env
-# Edit .env with your preferred settings
-```
-
-### 3. Run the full pipeline (scrape + analyse)
-
-```bash
-python main.py --extract-and-analyze --query "data engineer" --max-pages 30
-```
-
-### 4. Launch the dashboard
-
-```bash
-streamlit run dashboard/streamlit_app.py
-```
-
----
-
-## Pipeline Modes
-
-The pipeline supports three execution modes, selectable via CLI flags:
-
-### Scrape Mode
-
-Runs the full web scraping + skill extraction pipeline:
-
-```bash
-python main.py --scrape --query "machine learning engineer" --max-pages 20
-```
-
-- Launches a headless Chrome instance with randomised User-Agent rotation.
-- Paginates through Wuzzuf search results up to `--max-pages`.
-- Parses each job card and extracts skills using the two-stage NLP extractor.
-- Saves progress to a JSON checkpoint after every page (safe to interrupt and resume).
-- Outputs `output/raw_jobs.csv` and `output/raw_jobs.json`.
-
-### Analysis-Only Mode
-
-Runs analytics on previously scraped data (no browser required):
-
-```bash
-python main.py --analyze
-```
-
-- Reads `output/raw_jobs.json` (or `.csv` fallback).
-- Computes demand scores, seniority gap flags, and co-occurrence pairs.
-- Outputs `output/demand_scores.csv`, `output/gap_analysis.csv`, `output/cooccurrence_top_pairs.csv`.
-
-### Test Mode
-
-Caps the scraper at one page — ideal for CI/CD smoke tests:
-
-```bash
-python main.py --scrape --test-mode
-```
-
----
-
-## Configuration
-
-All settings are managed via Pydantic-Settings in `config/settings.py`.
-Values are read from environment variables or the `.env` file.
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `WUZZUF_BASE_URL` | `https://wuzzuf.net/search/jobs/` | Search endpoint |
-| `SCRAPE_MAX_PAGES` | `50` | Max pages per run |
-| `SCRAPE_HEADLESS` | `true` | Headless Chrome |
-| `SCRAPE_REQUEST_DELAY_SECONDS` | `2.5` | Polite delay between requests |
-| `OUTPUT_DIR` | `output` | Directory for CSV/JSON artefacts |
-| `STATE_FILE` | `pipeline/state/checkpoint.json` | Checkpoint path |
-| `LOG_LEVEL` | `INFO` | Logging verbosity |
-| `FUZZY_MATCH_THRESHOLD` | `85` | RapidFuzz score threshold (0–100) |
-| `CONTEXT_WINDOW_TOKENS` | `6` | Token radius for negation gating |
-
----
-
-## Skill Taxonomy
-
-`config/skill_taxonomy.py` contains a curated dictionary of **200+ technical skills** organised by domain:
-
-- Programming Languages (Python, JavaScript, TypeScript, Go, …)
-- Web Frameworks (Django, FastAPI, React, Angular, …)
-- Data Engineering (Spark, Kafka, Airflow, dbt, …)
-- Databases (PostgreSQL, MongoDB, Snowflake, BigQuery, …)
-- Cloud Platforms & Services (AWS, GCP, Azure, …)
-- DevOps & Infrastructure (Docker, Kubernetes, Terraform, …)
-- ML & AI (TensorFlow, PyTorch, LLMs, RAG, …)
-- Data Analysis & Visualisation (Pandas, Plotly, Tableau, …)
-- Streaming & Messaging (Kafka, Kinesis, Pub/Sub, …)
-- Security, Testing, and Soft/Process skills
-
-Each canonical skill maps to a list of known aliases/abbreviations used by the fuzzy-matching extractor.
-
----
-
-## Dashboard
-
-The Streamlit dashboard (`dashboard/streamlit_app.py`) provides five interactive pages:
-
-| Page | Description |
-|------|-------------|
-| **📊 Overview** | KPI cards (total jobs, unique skills, companies, locations) + seniority pie chart + top locations bar chart |
-| **🔥 Demand Heatmap** | Horizontal bar chart of top-N skills ranked by normalised demand score |
-| **🎯 Gap Analysis** | Heatmap of seniority-skill skew; flags skills disproportionately concentrated in one seniority tier |
-| **🕸 Co-occurrence** | Bubble chart of the most frequently co-occurring skill pairs |
-| **🔍 Job Explorer** | Searchable, filterable table of raw job postings |
-
-```bash
-streamlit run dashboard/streamlit_app.py
-```
-
----
-
-## Testing
-
-```bash
-# Run all tests
-pytest tests/ -v
-
-# With coverage report
-pytest tests/ -v --cov=. --cov-report=term-missing
-```
-
-The test suite covers:
-- `CardParser` HTML parsing, seniority inference, and edge cases.
-- `normalize_skill`, `normalize_text`, and `clean_job_text` normalisation helpers.
-- `SkillExtractor` exact matching, negation gating, deduplication, and output format.
-
----
-
-## Output Artefacts
-
-| File | Content |
-|------|---------|
-| `output/raw_jobs.csv` | Structured job postings (title, company, location, seniority, skills) |
-| `output/raw_jobs.json` | Same data in JSON format |
-| `output/demand_scores.csv` | Skill → raw_count, demand_score, pct_of_postings |
-| `output/gap_analysis.csv` | Skill × Seniority → count, skew, gap_flag |
-| `output/cooccurrence_top_pairs.csv` | Top co-occurring skill pairs with counts |
-
----
-
-## Extending the Project
-
-- **Add new skills**: Extend `config/skill_taxonomy.py` with new canonical names and aliases.
-- **Support new job boards**: Create a new scraper module following the `ListingScraper` interface.
-- **Custom analysis**: Add new analyser classes to `analysis/` following the `DemandScorer` pattern.
-- **New dashboard pages**: Add a new function to `dashboard/streamlit_app.py` and register it in `_PAGE_MAP`.
-- **Scheduled runs**: Wrap `Orchestrator.run()` in an Airflow DAG or a cron job.
-
----
-
-## Contributing
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/my-feature`.
-3. Commit your changes with a clear message.
-4. Push and open a Pull Request.
-
-Please ensure all tests pass before submitting a PR:
-
-```bash
-pytest tests/ -v
-```
-
----
-
-## License
-
-[MIT](LICENSE)
+🚀 Running the PipelineWuzzuf heavily leverages Cloudflare WAF capabilities, explicitly blocking rapid automated filtering. We adhere to these rules and utilize predefined category limits. Therefore, passing --query filters directly to the URL is disallowed.Step 1 — CI Smoke Test (2 minutes)Validates the entire pipeline end-to-end on a 50-job limit.Bashpython main.py --test-mode
+Step 2 — Full Production Scrape (3–5 hours)Collects raw HTML data and saves to output/raw_jobs.csv.Bashpython main.py
+Step 3 — Reprocess Data (Extraction & Analysis)Bypasses the web scraper. Loads the local raw_jobs.csv and re-runs the heavy NLP extraction. Use this if you update the skill taxonomy or context-window logic.Bashpython main.py --extract-and-analyze
+Step 4 — Recalculate Metrics (Instant)Bypasses scraping and extraction. Uses existing extracted_skills.csv to quickly recalculate Gap Signals.Bashpython main.py --analysis-only
+📊 Streamlit Dashboard FeaturesLaunch the interactive UI with: streamlit run dashboard/streamlit_app.pyPage 1 · Overview: High-level KPIs and category distribution donut charts.Page 2 · Top Skills: Dynamic data table of the Top 20 skills by demand score.Page 3 · Skill Gap Analysis: The core analytical view featuring the "Emerging Gap Skills" table, Seniority Skew Bar Charts, and a Gap Signal Treemap.Page 4 · Co-occurrence: Interactive heatmap showing which technologies are frequently requested together.Page 5 · Raw Data Explorer: Searchable, filterable table of all scraped jobs for transparent data auditing.👥 The TeamThis college project was built collaboratively across three architectural groups:Group A (Data Collection): Scraping infra, Cloudflare bypass, and checkpointing.Group B (Intelligence): NLP extraction, Pandas scoring, and taxonomy mapping.Group C (Storytellers): Pipeline orchestration, Streamlit dashboard, and UI.📄 License: For academic purposes. Data scraped from Wuzzuf.net is used solely for non-commercial research and analysis.
