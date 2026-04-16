@@ -1,0 +1,117 @@
+# ==============================================================
+# .gitignore – Wuzzuf Skill Gap Analyzer
+# Python + macOS + Data artefacts
+# ==============================================================
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+env.bak/
+venv.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.hypothesis/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pyright
+pyrightconfig.json
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Rope
+.ropeproject
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+
+# ── Project-specific ─────────────────────────────────────────
+output/*.csv
+output/*.json
+output/*.parquet
+output/*.xlsx
+
+# Selenium / Chrome driver cache
+.wdm/
+chromedriver*
+undetected_chromedriver/
+
+# Pipeline state / checkpoints
+pipeline/state/
+state.json
+
+# Streamlit cache
+.streamlit/
+
+# Secrets / environment
+.env
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
