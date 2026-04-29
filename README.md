@@ -1,4 +1,4 @@
-```md
+
 📊 Egyptian Tech Job Market Skill-Gap Analyzer  
 
 An end-to-end data pipeline and interactive analytics dashboard that scrapes, normalizes, and quantifies tech labor market trends on Wuzzuf.net. This system identifies deep market trends, high-demand skills, and emerging talent gaps in the Egyptian tech sector.
@@ -7,7 +7,7 @@ An end-to-end data pipeline and interactive analytics dashboard that scrapes, no
 Access the deployed interactive dashboard here:  
 👉 [View Dashboard](https://skill-gap-analyzer-o7bhtsbwkmabwsxc54kczt.streamlit.app/)
 
-
+```md
 ##🏛 Architecture Diagram
 ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
 │                 │       │                 │       │                 │
