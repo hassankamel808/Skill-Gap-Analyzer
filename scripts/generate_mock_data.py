@@ -8,9 +8,25 @@ end-to-end pipeline testing without needing Chrome/Selenium.
 matching realistic Egyptian tech market proportions.
 
 Usage:
+    # Safe default — writes to output/test/ (NEVER touches production output/)
     python scripts/generate_mock_data.py
+
+    # Explicit alternate directory
+    python scripts/generate_mock_data.py --output-dir /tmp/my_test_data
+
+    # Override safeguard and write to the real production output/ path
+    # (ONLY for manual debugging — do NOT call from tests or CI)
+    python scripts/generate_mock_data.py --force-production
+
+Safety guarantee
+----------------
+By default this script refuses to write into the configured production
+RAW_JOBS_CSV path (settings.RAW_JOBS_CSV).  Pass --force-production
+only if you deliberately want to seed the production CSV with mock data
+(e.g. for a manual demo run with no real scrape available).
 """
 
+import argparse
 import csv
 import sys
 from pathlib import Path
@@ -21,6 +37,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from config import settings
 from extraction.skill_extractor import extract_skills_for_job
+
+# ---------------------------------------------------------------------------
+# Default safe output directory — always separate from production
+# ---------------------------------------------------------------------------
+_DEFAULT_TEST_OUTPUT_DIR: Path = settings.OUTPUT_DIR / "test"
 
 # ---------------------------------------------------------------------------
 # Mock job definitions
@@ -360,34 +381,74 @@ _JOB_FIELDS = [
 ]
 
 
-def generate(verbose: bool = True) -> None:
-    """Generate both CSV files using the real extraction pipeline."""
-    settings.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+def generate(
+    verbose: bool = True,
+    output_dir: Path | None = None,
+    force_production: bool = False,
+) -> tuple[Path, Path]:
+    """
+    Generate both CSV files using the real extraction pipeline.
+
+    Parameters
+    ----------
+    verbose          : Print progress to stdout.
+    output_dir       : Directory to write CSVs into.  Defaults to
+                       ``output/test/`` (never the real production path).
+    force_production : If True, write directly to settings.RAW_JOBS_CSV /
+                       settings.EXTRACTED_SKILLS_CSV (the production paths).
+                       Use only for deliberate demo/seed runs.
+
+    Returns
+    -------
+    (raw_jobs_path, extracted_skills_path)
+    """
+    from extraction.skill_extractor import _ensure_csv_header, _append_skills_to_csv
+
+    # ── Resolve output paths ─────────────────────────────────────────────────
+    if force_production:
+        raw_jobs_path       = settings.RAW_JOBS_CSV
+        extracted_skills_path = settings.EXTRACTED_SKILLS_CSV
+    else:
+        out_dir = Path(output_dir) if output_dir is not None else _DEFAULT_TEST_OUTPUT_DIR
+        out_dir.mkdir(parents=True, exist_ok=True)
+        raw_jobs_path         = out_dir / "raw_jobs.csv"
+        extracted_skills_path = out_dir / "extracted_skills.csv"
+
+    # ── Safety guard: never silently overwrite the production CSV ────────────
+    production_raw = settings.RAW_JOBS_CSV.resolve()
+    if raw_jobs_path.resolve() == production_raw and not force_production:
+        raise RuntimeError(
+            "generate_mock_data.generate() would overwrite the production "
+            f"raw_jobs.csv ({production_raw}).\n"
+            "Pass force_production=True only if you intentionally want to seed "
+            "the production CSV with mock data."
+        )
 
     if verbose:
         print(f"Generating mock data for {len(MOCK_JOBS)} jobs ...")
+        if not force_production:
+            print(f"  [SAFE] Writing to test directory: {raw_jobs_path.parent}")
 
     # ── Write raw_jobs.csv ───────────────────────────────────────────────────
-    with settings.RAW_JOBS_CSV.open("w", newline="", encoding="utf-8") as fh:
+    raw_jobs_path.parent.mkdir(parents=True, exist_ok=True)
+    with raw_jobs_path.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=_JOB_FIELDS, extrasaction="ignore")
         writer.writeheader()
         for job in MOCK_JOBS:
             row = {
                 **job,
-                "job_url":       f"https://wuzzuf.net/jobs/p/{job['job_id']}-mock-egypt",
-                "location_raw":  f"{job['city']}, Egypt",
+                "job_url":         f"https://wuzzuf.net/jobs/p/{job['job_id']}-mock-egypt",
+                "location_raw":    f"{job['city']}, Egypt",
                 "posted_date_raw": "2 days ago",
-                "scraped_at":    NOW,
+                "scraped_at":      NOW,
             }
             writer.writerow(row)
 
     if verbose:
-        print(f"  [OK] raw_jobs.csv -- {len(MOCK_JOBS)} rows -> {settings.RAW_JOBS_CSV}")
+        print(f"  [OK] raw_jobs.csv -- {len(MOCK_JOBS)} rows -> {raw_jobs_path}")
 
     # ── Run extraction pipeline and write extracted_skills.csv ───────────────
-    from extraction.skill_extractor import _ensure_csv_header, _append_skills_to_csv
-
-    _ensure_csv_header(settings.EXTRACTED_SKILLS_CSV)
+    _ensure_csv_header(extracted_skills_path)
 
     total_skill_rows = 0
     for job in MOCK_JOBS:
@@ -398,13 +459,43 @@ def generate(verbose: bool = True) -> None:
         }
         rows = extract_skills_for_job(full_job)
         if rows:
-            _append_skills_to_csv(rows, settings.EXTRACTED_SKILLS_CSV)
+            _append_skills_to_csv(rows, extracted_skills_path)
             total_skill_rows += len(rows)
 
     if verbose:
-        print(f"  [OK] extracted_skills.csv -- {total_skill_rows} rows -> {settings.EXTRACTED_SKILLS_CSV}")
+        print(f"  [OK] extracted_skills.csv -- {total_skill_rows} rows -> {extracted_skills_path}")
         print("Mock data generation complete.")
+
+    return raw_jobs_path, extracted_skills_path
 
 
 if __name__ == "__main__":
-    generate(verbose=True)
+    parser = argparse.ArgumentParser(
+        description="Generate mock job/skills CSVs for pipeline testing."
+    )
+    parser.add_argument(
+        "--output-dir",
+        metavar="DIR",
+        default=None,
+        help=(
+            f"Directory to write CSVs into "
+            f"(default: {_DEFAULT_TEST_OUTPUT_DIR}). "
+            "Never writes to the production output/ path unless "
+            "--force-production is passed."
+        ),
+    )
+    parser.add_argument(
+        "--force-production",
+        action="store_true",
+        help=(
+            "Write directly to the configured production CSV paths "
+            "(settings.RAW_JOBS_CSV / settings.EXTRACTED_SKILLS_CSV). "
+            "Use only for deliberate demo/seed runs — NOT in tests or CI."
+        ),
+    )
+    cli_args = parser.parse_args()
+    generate(
+        verbose=True,
+        output_dir=cli_args.output_dir,
+        force_production=cli_args.force_production,
+    )
